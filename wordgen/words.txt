@@ -1,0 +1,3900 @@
+aa
+aaa
+aaaa
+aaaaa
+aaaab
+aaaac
+aaaad
+aaaa 
+aaab
+aaaba
+aaabb
+aaabc
+aaabd
+aaab 
+aaac
+aaaca
+aaacb
+aaacc
+aaacd
+aaac 
+aaad
+aaada
+aaadb
+aaadc
+aaadd
+aaad 
+aaa 
+aaa a
+aaa b
+aaa c
+aaa d
+aaa  
+aab
+aaba
+aabaa
+aabab
+aabac
+aabad
+aaba 
+aabb
+aabba
+aabbb
+aabbc
+aabbd
+aabb 
+aabc
+aabca
+aabcb
+aabcc
+aabcd
+aabc 
+aabd
+aabda
+aabdb
+aabdc
+aabdd
+aabd 
+aab 
+aab a
+aab b
+aab c
+aab d
+aab  
+aac
+aaca
+aacaa
+aacab
+aacac
+aacad
+aaca 
+aacb
+aacba
+aacbb
+aacbc
+aacbd
+aacb 
+aacc
+aacca
+aaccb
+aaccc
+aaccd
+aacc 
+aacd
+aacda
+aacdb
+aacdc
+aacdd
+aacd 
+aac 
+aac a
+aac b
+aac c
+aac d
+aac  
+aad
+aada
+aadaa
+aadab
+aadac
+aadad
+aada 
+aadb
+aadba
+aadbb
+aadbc
+aadbd
+aadb 
+aadc
+aadca
+aadcb
+aadcc
+aadcd
+aadc 
+aadd
+aadda
+aaddb
+aaddc
+aaddd
+aadd 
+aad 
+aad a
+aad b
+aad c
+aad d
+aad  
+aa 
+aa a
+aa aa
+aa ab
+aa ac
+aa ad
+aa a 
+aa b
+aa ba
+aa bb
+aa bc
+aa bd
+aa b 
+aa c
+aa ca
+aa cb
+aa cc
+aa cd
+aa c 
+aa d
+aa da
+aa db
+aa dc
+aa dd
+aa d 
+aa  
+aa  a
+aa  b
+aa  c
+aa  d
+aa   
+ab
+aba
+abaa
+abaaa
+abaab
+abaac
+abaad
+abaa 
+abab
+ababa
+ababb
+ababc
+ababd
+abab 
+abac
+abaca
+abacb
+abacc
+abacd
+abac 
+abad
+abada
+abadb
+abadc
+abadd
+abad 
+aba 
+aba a
+aba b
+aba c
+aba d
+aba  
+abb
+abba
+abbaa
+abbab
+abbac
+abbad
+abba 
+abbb
+abbba
+abbbb
+abbbc
+abbbd
+abbb 
+abbc
+abbca
+abbcb
+abbcc
+abbcd
+abbc 
+abbd
+abbda
+abbdb
+abbdc
+abbdd
+abbd 
+abb 
+abb a
+abb b
+abb c
+abb d
+abb  
+abc
+abca
+abcaa
+abcab
+abcac
+abcad
+abca 
+abcb
+abcba
+abcbb
+abcbc
+abcbd
+abcb 
+abcc
+abcca
+abccb
+abccc
+abccd
+abcc 
+abcd
+abcda
+abcdb
+abcdc
+abcdd
+abcd 
+abc 
+abc a
+abc b
+abc c
+abc d
+abc  
+abd
+abda
+abdaa
+abdab
+abdac
+abdad
+abda 
+abdb
+abdba
+abdbb
+abdbc
+abdbd
+abdb 
+abdc
+abdca
+abdcb
+abdcc
+abdcd
+abdc 
+abdd
+abdda
+abddb
+abddc
+abddd
+abdd 
+abd 
+abd a
+abd b
+abd c
+abd d
+abd  
+ab 
+ab a
+ab aa
+ab ab
+ab ac
+ab ad
+ab a 
+ab b
+ab ba
+ab bb
+ab bc
+ab bd
+ab b 
+ab c
+ab ca
+ab cb
+ab cc
+ab cd
+ab c 
+ab d
+ab da
+ab db
+ab dc
+ab dd
+ab d 
+ab  
+ab  a
+ab  b
+ab  c
+ab  d
+ab   
+ac
+aca
+acaa
+acaaa
+acaab
+acaac
+acaad
+acaa 
+acab
+acaba
+acabb
+acabc
+acabd
+acab 
+acac
+acaca
+acacb
+acacc
+acacd
+acac 
+acad
+acada
+acadb
+acadc
+acadd
+acad 
+aca 
+aca a
+aca b
+aca c
+aca d
+aca  
+acb
+acba
+acbaa
+acbab
+acbac
+acbad
+acba 
+acbb
+acbba
+acbbb
+acbbc
+acbbd
+acbb 
+acbc
+acbca
+acbcb
+acbcc
+acbcd
+acbc 
+acbd
+acbda
+acbdb
+acbdc
+acbdd
+acbd 
+acb 
+acb a
+acb b
+acb c
+acb d
+acb  
+acc
+acca
+accaa
+accab
+accac
+accad
+acca 
+accb
+accba
+accbb
+accbc
+accbd
+accb 
+accc
+accca
+acccb
+acccc
+acccd
+accc 
+accd
+accda
+accdb
+accdc
+accdd
+accd 
+acc 
+acc a
+acc b
+acc c
+acc d
+acc  
+acd
+acda
+acdaa
+acdab
+acdac
+acdad
+acda 
+acdb
+acdba
+acdbb
+acdbc
+acdbd
+acdb 
+acdc
+acdca
+acdcb
+acdcc
+acdcd
+acdc 
+acdd
+acdda
+acddb
+acddc
+acddd
+acdd 
+acd 
+acd a
+acd b
+acd c
+acd d
+acd  
+ac 
+ac a
+ac aa
+ac ab
+ac ac
+ac ad
+ac a 
+ac b
+ac ba
+ac bb
+ac bc
+ac bd
+ac b 
+ac c
+ac ca
+ac cb
+ac cc
+ac cd
+ac c 
+ac d
+ac da
+ac db
+ac dc
+ac dd
+ac d 
+ac  
+ac  a
+ac  b
+ac  c
+ac  d
+ac   
+ad
+ada
+adaa
+adaaa
+adaab
+adaac
+adaad
+adaa 
+adab
+adaba
+adabb
+adabc
+adabd
+adab 
+adac
+adaca
+adacb
+adacc
+adacd
+adac 
+adad
+adada
+adadb
+adadc
+adadd
+adad 
+ada 
+ada a
+ada b
+ada c
+ada d
+ada  
+adb
+adba
+adbaa
+adbab
+adbac
+adbad
+adba 
+adbb
+adbba
+adbbb
+adbbc
+adbbd
+adbb 
+adbc
+adbca
+adbcb
+adbcc
+adbcd
+adbc 
+adbd
+adbda
+adbdb
+adbdc
+adbdd
+adbd 
+adb 
+adb a
+adb b
+adb c
+adb d
+adb  
+adc
+adca
+adcaa
+adcab
+adcac
+adcad
+adca 
+adcb
+adcba
+adcbb
+adcbc
+adcbd
+adcb 
+adcc
+adcca
+adccb
+adccc
+adccd
+adcc 
+adcd
+adcda
+adcdb
+adcdc
+adcdd
+adcd 
+adc 
+adc a
+adc b
+adc c
+adc d
+adc  
+add
+adda
+addaa
+addab
+addac
+addad
+adda 
+addb
+addba
+addbb
+addbc
+addbd
+addb 
+addc
+addca
+addcb
+addcc
+addcd
+addc 
+addd
+addda
+adddb
+adddc
+adddd
+addd 
+add 
+add a
+add b
+add c
+add d
+add  
+ad 
+ad a
+ad aa
+ad ab
+ad ac
+ad ad
+ad a 
+ad b
+ad ba
+ad bb
+ad bc
+ad bd
+ad b 
+ad c
+ad ca
+ad cb
+ad cc
+ad cd
+ad c 
+ad d
+ad da
+ad db
+ad dc
+ad dd
+ad d 
+ad  
+ad  a
+ad  b
+ad  c
+ad  d
+ad   
+a 
+a a
+a aa
+a aaa
+a aab
+a aac
+a aad
+a aa 
+a ab
+a aba
+a abb
+a abc
+a abd
+a ab 
+a ac
+a aca
+a acb
+a acc
+a acd
+a ac 
+a ad
+a ada
+a adb
+a adc
+a add
+a ad 
+a a 
+a a a
+a a b
+a a c
+a a d
+a a  
+a b
+a ba
+a baa
+a bab
+a bac
+a bad
+a ba 
+a bb
+a bba
+a bbb
+a bbc
+a bbd
+a bb 
+a bc
+a bca
+a bcb
+a bcc
+a bcd
+a bc 
+a bd
+a bda
+a bdb
+a bdc
+a bdd
+a bd 
+a b 
+a b a
+a b b
+a b c
+a b d
+a b  
+a c
+a ca
+a caa
+a cab
+a cac
+a cad
+a ca 
+a cb
+a cba
+a cbb
+a cbc
+a cbd
+a cb 
+a cc
+a cca
+a ccb
+a ccc
+a ccd
+a cc 
+a cd
+a cda
+a cdb
+a cdc
+a cdd
+a cd 
+a c 
+a c a
+a c b
+a c c
+a c d
+a c  
+a d
+a da
+a daa
+a dab
+a dac
+a dad
+a da 
+a db
+a dba
+a dbb
+a dbc
+a dbd
+a db 
+a dc
+a dca
+a dcb
+a dcc
+a dcd
+a dc 
+a dd
+a dda
+a ddb
+a ddc
+a ddd
+a dd 
+a d 
+a d a
+a d b
+a d c
+a d d
+a d  
+a  
+a  a
+a  aa
+a  ab
+a  ac
+a  ad
+a  a 
+a  b
+a  ba
+a  bb
+a  bc
+a  bd
+a  b 
+a  c
+a  ca
+a  cb
+a  cc
+a  cd
+a  c 
+a  d
+a  da
+a  db
+a  dc
+a  dd
+a  d 
+a   
+a   a
+a   b
+a   c
+a   d
+a    
+ba
+baa
+baaa
+baaaa
+baaab
+baaac
+baaad
+baaa 
+baab
+baaba
+baabb
+baabc
+baabd
+baab 
+baac
+baaca
+baacb
+baacc
+baacd
+baac 
+baad
+baada
+baadb
+baadc
+baadd
+baad 
+baa 
+baa a
+baa b
+baa c
+baa d
+baa  
+bab
+baba
+babaa
+babab
+babac
+babad
+baba 
+babb
+babba
+babbb
+babbc
+babbd
+babb 
+babc
+babca
+babcb
+babcc
+babcd
+babc 
+babd
+babda
+babdb
+babdc
+babdd
+babd 
+bab 
+bab a
+bab b
+bab c
+bab d
+bab  
+bac
+baca
+bacaa
+bacab
+bacac
+bacad
+baca 
+bacb
+bacba
+bacbb
+bacbc
+bacbd
+bacb 
+bacc
+bacca
+baccb
+baccc
+baccd
+bacc 
+bacd
+bacda
+bacdb
+bacdc
+bacdd
+bacd 
+bac 
+bac a
+bac b
+bac c
+bac d
+bac  
+bad
+bada
+badaa
+badab
+badac
+badad
+bada 
+badb
+badba
+badbb
+badbc
+badbd
+badb 
+badc
+badca
+badcb
+badcc
+badcd
+badc 
+badd
+badda
+baddb
+baddc
+baddd
+badd 
+bad 
+bad a
+bad b
+bad c
+bad d
+bad  
+ba 
+ba a
+ba aa
+ba ab
+ba ac
+ba ad
+ba a 
+ba b
+ba ba
+ba bb
+ba bc
+ba bd
+ba b 
+ba c
+ba ca
+ba cb
+ba cc
+ba cd
+ba c 
+ba d
+ba da
+ba db
+ba dc
+ba dd
+ba d 
+ba  
+ba  a
+ba  b
+ba  c
+ba  d
+ba   
+bb
+bba
+bbaa
+bbaaa
+bbaab
+bbaac
+bbaad
+bbaa 
+bbab
+bbaba
+bbabb
+bbabc
+bbabd
+bbab 
+bbac
+bbaca
+bbacb
+bbacc
+bbacd
+bbac 
+bbad
+bbada
+bbadb
+bbadc
+bbadd
+bbad 
+bba 
+bba a
+bba b
+bba c
+bba d
+bba  
+bbb
+bbba
+bbbaa
+bbbab
+bbbac
+bbbad
+bbba 
+bbbb
+bbbba
+bbbbb
+bbbbc
+bbbbd
+bbbb 
+bbbc
+bbbca
+bbbcb
+bbbcc
+bbbcd
+bbbc 
+bbbd
+bbbda
+bbbdb
+bbbdc
+bbbdd
+bbbd 
+bbb 
+bbb a
+bbb b
+bbb c
+bbb d
+bbb  
+bbc
+bbca
+bbcaa
+bbcab
+bbcac
+bbcad
+bbca 
+bbcb
+bbcba
+bbcbb
+bbcbc
+bbcbd
+bbcb 
+bbcc
+bbcca
+bbccb
+bbccc
+bbccd
+bbcc 
+bbcd
+bbcda
+bbcdb
+bbcdc
+bbcdd
+bbcd 
+bbc 
+bbc a
+bbc b
+bbc c
+bbc d
+bbc  
+bbd
+bbda
+bbdaa
+bbdab
+bbdac
+bbdad
+bbda 
+bbdb
+bbdba
+bbdbb
+bbdbc
+bbdbd
+bbdb 
+bbdc
+bbdca
+bbdcb
+bbdcc
+bbdcd
+bbdc 
+bbdd
+bbdda
+bbddb
+bbddc
+bbddd
+bbdd 
+bbd 
+bbd a
+bbd b
+bbd c
+bbd d
+bbd  
+bb 
+bb a
+bb aa
+bb ab
+bb ac
+bb ad
+bb a 
+bb b
+bb ba
+bb bb
+bb bc
+bb bd
+bb b 
+bb c
+bb ca
+bb cb
+bb cc
+bb cd
+bb c 
+bb d
+bb da
+bb db
+bb dc
+bb dd
+bb d 
+bb  
+bb  a
+bb  b
+bb  c
+bb  d
+bb   
+bc
+bca
+bcaa
+bcaaa
+bcaab
+bcaac
+bcaad
+bcaa 
+bcab
+bcaba
+bcabb
+bcabc
+bcabd
+bcab 
+bcac
+bcaca
+bcacb
+bcacc
+bcacd
+bcac 
+bcad
+bcada
+bcadb
+bcadc
+bcadd
+bcad 
+bca 
+bca a
+bca b
+bca c
+bca d
+bca  
+bcb
+bcba
+bcbaa
+bcbab
+bcbac
+bcbad
+bcba 
+bcbb
+bcbba
+bcbbb
+bcbbc
+bcbbd
+bcbb 
+bcbc
+bcbca
+bcbcb
+bcbcc
+bcbcd
+bcbc 
+bcbd
+bcbda
+bcbdb
+bcbdc
+bcbdd
+bcbd 
+bcb 
+bcb a
+bcb b
+bcb c
+bcb d
+bcb  
+bcc
+bcca
+bccaa
+bccab
+bccac
+bccad
+bcca 
+bccb
+bccba
+bccbb
+bccbc
+bccbd
+bccb 
+bccc
+bccca
+bcccb
+bcccc
+bcccd
+bccc 
+bccd
+bccda
+bccdb
+bccdc
+bccdd
+bccd 
+bcc 
+bcc a
+bcc b
+bcc c
+bcc d
+bcc  
+bcd
+bcda
+bcdaa
+bcdab
+bcdac
+bcdad
+bcda 
+bcdb
+bcdba
+bcdbb
+bcdbc
+bcdbd
+bcdb 
+bcdc
+bcdca
+bcdcb
+bcdcc
+bcdcd
+bcdc 
+bcdd
+bcdda
+bcddb
+bcddc
+bcddd
+bcdd 
+bcd 
+bcd a
+bcd b
+bcd c
+bcd d
+bcd  
+bc 
+bc a
+bc aa
+bc ab
+bc ac
+bc ad
+bc a 
+bc b
+bc ba
+bc bb
+bc bc
+bc bd
+bc b 
+bc c
+bc ca
+bc cb
+bc cc
+bc cd
+bc c 
+bc d
+bc da
+bc db
+bc dc
+bc dd
+bc d 
+bc  
+bc  a
+bc  b
+bc  c
+bc  d
+bc   
+bd
+bda
+bdaa
+bdaaa
+bdaab
+bdaac
+bdaad
+bdaa 
+bdab
+bdaba
+bdabb
+bdabc
+bdabd
+bdab 
+bdac
+bdaca
+bdacb
+bdacc
+bdacd
+bdac 
+bdad
+bdada
+bdadb
+bdadc
+bdadd
+bdad 
+bda 
+bda a
+bda b
+bda c
+bda d
+bda  
+bdb
+bdba
+bdbaa
+bdbab
+bdbac
+bdbad
+bdba 
+bdbb
+bdbba
+bdbbb
+bdbbc
+bdbbd
+bdbb 
+bdbc
+bdbca
+bdbcb
+bdbcc
+bdbcd
+bdbc 
+bdbd
+bdbda
+bdbdb
+bdbdc
+bdbdd
+bdbd 
+bdb 
+bdb a
+bdb b
+bdb c
+bdb d
+bdb  
+bdc
+bdca
+bdcaa
+bdcab
+bdcac
+bdcad
+bdca 
+bdcb
+bdcba
+bdcbb
+bdcbc
+bdcbd
+bdcb 
+bdcc
+bdcca
+bdccb
+bdccc
+bdccd
+bdcc 
+bdcd
+bdcda
+bdcdb
+bdcdc
+bdcdd
+bdcd 
+bdc 
+bdc a
+bdc b
+bdc c
+bdc d
+bdc  
+bdd
+bdda
+bddaa
+bddab
+bddac
+bddad
+bdda 
+bddb
+bddba
+bddbb
+bddbc
+bddbd
+bddb 
+bddc
+bddca
+bddcb
+bddcc
+bddcd
+bddc 
+bddd
+bddda
+bdddb
+bdddc
+bdddd
+bddd 
+bdd 
+bdd a
+bdd b
+bdd c
+bdd d
+bdd  
+bd 
+bd a
+bd aa
+bd ab
+bd ac
+bd ad
+bd a 
+bd b
+bd ba
+bd bb
+bd bc
+bd bd
+bd b 
+bd c
+bd ca
+bd cb
+bd cc
+bd cd
+bd c 
+bd d
+bd da
+bd db
+bd dc
+bd dd
+bd d 
+bd  
+bd  a
+bd  b
+bd  c
+bd  d
+bd   
+b 
+b a
+b aa
+b aaa
+b aab
+b aac
+b aad
+b aa 
+b ab
+b aba
+b abb
+b abc
+b abd
+b ab 
+b ac
+b aca
+b acb
+b acc
+b acd
+b ac 
+b ad
+b ada
+b adb
+b adc
+b add
+b ad 
+b a 
+b a a
+b a b
+b a c
+b a d
+b a  
+b b
+b ba
+b baa
+b bab
+b bac
+b bad
+b ba 
+b bb
+b bba
+b bbb
+b bbc
+b bbd
+b bb 
+b bc
+b bca
+b bcb
+b bcc
+b bcd
+b bc 
+b bd
+b bda
+b bdb
+b bdc
+b bdd
+b bd 
+b b 
+b b a
+b b b
+b b c
+b b d
+b b  
+b c
+b ca
+b caa
+b cab
+b cac
+b cad
+b ca 
+b cb
+b cba
+b cbb
+b cbc
+b cbd
+b cb 
+b cc
+b cca
+b ccb
+b ccc
+b ccd
+b cc 
+b cd
+b cda
+b cdb
+b cdc
+b cdd
+b cd 
+b c 
+b c a
+b c b
+b c c
+b c d
+b c  
+b d
+b da
+b daa
+b dab
+b dac
+b dad
+b da 
+b db
+b dba
+b dbb
+b dbc
+b dbd
+b db 
+b dc
+b dca
+b dcb
+b dcc
+b dcd
+b dc 
+b dd
+b dda
+b ddb
+b ddc
+b ddd
+b dd 
+b d 
+b d a
+b d b
+b d c
+b d d
+b d  
+b  
+b  a
+b  aa
+b  ab
+b  ac
+b  ad
+b  a 
+b  b
+b  ba
+b  bb
+b  bc
+b  bd
+b  b 
+b  c
+b  ca
+b  cb
+b  cc
+b  cd
+b  c 
+b  d
+b  da
+b  db
+b  dc
+b  dd
+b  d 
+b   
+b   a
+b   b
+b   c
+b   d
+b    
+ca
+caa
+caaa
+caaaa
+caaab
+caaac
+caaad
+caaa 
+caab
+caaba
+caabb
+caabc
+caabd
+caab 
+caac
+caaca
+caacb
+caacc
+caacd
+caac 
+caad
+caada
+caadb
+caadc
+caadd
+caad 
+caa 
+caa a
+caa b
+caa c
+caa d
+caa  
+cab
+caba
+cabaa
+cabab
+cabac
+cabad
+caba 
+cabb
+cabba
+cabbb
+cabbc
+cabbd
+cabb 
+cabc
+cabca
+cabcb
+cabcc
+cabcd
+cabc 
+cabd
+cabda
+cabdb
+cabdc
+cabdd
+cabd 
+cab 
+cab a
+cab b
+cab c
+cab d
+cab  
+cac
+caca
+cacaa
+cacab
+cacac
+cacad
+caca 
+cacb
+cacba
+cacbb
+cacbc
+cacbd
+cacb 
+cacc
+cacca
+caccb
+caccc
+caccd
+cacc 
+cacd
+cacda
+cacdb
+cacdc
+cacdd
+cacd 
+cac 
+cac a
+cac b
+cac c
+cac d
+cac  
+cad
+cada
+cadaa
+cadab
+cadac
+cadad
+cada 
+cadb
+cadba
+cadbb
+cadbc
+cadbd
+cadb 
+cadc
+cadca
+cadcb
+cadcc
+cadcd
+cadc 
+cadd
+cadda
+caddb
+caddc
+caddd
+cadd 
+cad 
+cad a
+cad b
+cad c
+cad d
+cad  
+ca 
+ca a
+ca aa
+ca ab
+ca ac
+ca ad
+ca a 
+ca b
+ca ba
+ca bb
+ca bc
+ca bd
+ca b 
+ca c
+ca ca
+ca cb
+ca cc
+ca cd
+ca c 
+ca d
+ca da
+ca db
+ca dc
+ca dd
+ca d 
+ca  
+ca  a
+ca  b
+ca  c
+ca  d
+ca   
+cb
+cba
+cbaa
+cbaaa
+cbaab
+cbaac
+cbaad
+cbaa 
+cbab
+cbaba
+cbabb
+cbabc
+cbabd
+cbab 
+cbac
+cbaca
+cbacb
+cbacc
+cbacd
+cbac 
+cbad
+cbada
+cbadb
+cbadc
+cbadd
+cbad 
+cba 
+cba a
+cba b
+cba c
+cba d
+cba  
+cbb
+cbba
+cbbaa
+cbbab
+cbbac
+cbbad
+cbba 
+cbbb
+cbbba
+cbbbb
+cbbbc
+cbbbd
+cbbb 
+cbbc
+cbbca
+cbbcb
+cbbcc
+cbbcd
+cbbc 
+cbbd
+cbbda
+cbbdb
+cbbdc
+cbbdd
+cbbd 
+cbb 
+cbb a
+cbb b
+cbb c
+cbb d
+cbb  
+cbc
+cbca
+cbcaa
+cbcab
+cbcac
+cbcad
+cbca 
+cbcb
+cbcba
+cbcbb
+cbcbc
+cbcbd
+cbcb 
+cbcc
+cbcca
+cbccb
+cbccc
+cbccd
+cbcc 
+cbcd
+cbcda
+cbcdb
+cbcdc
+cbcdd
+cbcd 
+cbc 
+cbc a
+cbc b
+cbc c
+cbc d
+cbc  
+cbd
+cbda
+cbdaa
+cbdab
+cbdac
+cbdad
+cbda 
+cbdb
+cbdba
+cbdbb
+cbdbc
+cbdbd
+cbdb 
+cbdc
+cbdca
+cbdcb
+cbdcc
+cbdcd
+cbdc 
+cbdd
+cbdda
+cbddb
+cbddc
+cbddd
+cbdd 
+cbd 
+cbd a
+cbd b
+cbd c
+cbd d
+cbd  
+cb 
+cb a
+cb aa
+cb ab
+cb ac
+cb ad
+cb a 
+cb b
+cb ba
+cb bb
+cb bc
+cb bd
+cb b 
+cb c
+cb ca
+cb cb
+cb cc
+cb cd
+cb c 
+cb d
+cb da
+cb db
+cb dc
+cb dd
+cb d 
+cb  
+cb  a
+cb  b
+cb  c
+cb  d
+cb   
+cc
+cca
+ccaa
+ccaaa
+ccaab
+ccaac
+ccaad
+ccaa 
+ccab
+ccaba
+ccabb
+ccabc
+ccabd
+ccab 
+ccac
+ccaca
+ccacb
+ccacc
+ccacd
+ccac 
+ccad
+ccada
+ccadb
+ccadc
+ccadd
+ccad 
+cca 
+cca a
+cca b
+cca c
+cca d
+cca  
+ccb
+ccba
+ccbaa
+ccbab
+ccbac
+ccbad
+ccba 
+ccbb
+ccbba
+ccbbb
+ccbbc
+ccbbd
+ccbb 
+ccbc
+ccbca
+ccbcb
+ccbcc
+ccbcd
+ccbc 
+ccbd
+ccbda
+ccbdb
+ccbdc
+ccbdd
+ccbd 
+ccb 
+ccb a
+ccb b
+ccb c
+ccb d
+ccb  
+ccc
+ccca
+cccaa
+cccab
+cccac
+cccad
+ccca 
+cccb
+cccba
+cccbb
+cccbc
+cccbd
+cccb 
+cccc
+cccca
+ccccb
+ccccc
+ccccd
+cccc 
+cccd
+cccda
+cccdb
+cccdc
+cccdd
+cccd 
+ccc 
+ccc a
+ccc b
+ccc c
+ccc d
+ccc  
+ccd
+ccda
+ccdaa
+ccdab
+ccdac
+ccdad
+ccda 
+ccdb
+ccdba
+ccdbb
+ccdbc
+ccdbd
+ccdb 
+ccdc
+ccdca
+ccdcb
+ccdcc
+ccdcd
+ccdc 
+ccdd
+ccdda
+ccddb
+ccddc
+ccddd
+ccdd 
+ccd 
+ccd a
+ccd b
+ccd c
+ccd d
+ccd  
+cc 
+cc a
+cc aa
+cc ab
+cc ac
+cc ad
+cc a 
+cc b
+cc ba
+cc bb
+cc bc
+cc bd
+cc b 
+cc c
+cc ca
+cc cb
+cc cc
+cc cd
+cc c 
+cc d
+cc da
+cc db
+cc dc
+cc dd
+cc d 
+cc  
+cc  a
+cc  b
+cc  c
+cc  d
+cc   
+cd
+cda
+cdaa
+cdaaa
+cdaab
+cdaac
+cdaad
+cdaa 
+cdab
+cdaba
+cdabb
+cdabc
+cdabd
+cdab 
+cdac
+cdaca
+cdacb
+cdacc
+cdacd
+cdac 
+cdad
+cdada
+cdadb
+cdadc
+cdadd
+cdad 
+cda 
+cda a
+cda b
+cda c
+cda d
+cda  
+cdb
+cdba
+cdbaa
+cdbab
+cdbac
+cdbad
+cdba 
+cdbb
+cdbba
+cdbbb
+cdbbc
+cdbbd
+cdbb 
+cdbc
+cdbca
+cdbcb
+cdbcc
+cdbcd
+cdbc 
+cdbd
+cdbda
+cdbdb
+cdbdc
+cdbdd
+cdbd 
+cdb 
+cdb a
+cdb b
+cdb c
+cdb d
+cdb  
+cdc
+cdca
+cdcaa
+cdcab
+cdcac
+cdcad
+cdca 
+cdcb
+cdcba
+cdcbb
+cdcbc
+cdcbd
+cdcb 
+cdcc
+cdcca
+cdccb
+cdccc
+cdccd
+cdcc 
+cdcd
+cdcda
+cdcdb
+cdcdc
+cdcdd
+cdcd 
+cdc 
+cdc a
+cdc b
+cdc c
+cdc d
+cdc  
+cdd
+cdda
+cddaa
+cddab
+cddac
+cddad
+cdda 
+cddb
+cddba
+cddbb
+cddbc
+cddbd
+cddb 
+cddc
+cddca
+cddcb
+cddcc
+cddcd
+cddc 
+cddd
+cddda
+cdddb
+cdddc
+cdddd
+cddd 
+cdd 
+cdd a
+cdd b
+cdd c
+cdd d
+cdd  
+cd 
+cd a
+cd aa
+cd ab
+cd ac
+cd ad
+cd a 
+cd b
+cd ba
+cd bb
+cd bc
+cd bd
+cd b 
+cd c
+cd ca
+cd cb
+cd cc
+cd cd
+cd c 
+cd d
+cd da
+cd db
+cd dc
+cd dd
+cd d 
+cd  
+cd  a
+cd  b
+cd  c
+cd  d
+cd   
+c 
+c a
+c aa
+c aaa
+c aab
+c aac
+c aad
+c aa 
+c ab
+c aba
+c abb
+c abc
+c abd
+c ab 
+c ac
+c aca
+c acb
+c acc
+c acd
+c ac 
+c ad
+c ada
+c adb
+c adc
+c add
+c ad 
+c a 
+c a a
+c a b
+c a c
+c a d
+c a  
+c b
+c ba
+c baa
+c bab
+c bac
+c bad
+c ba 
+c bb
+c bba
+c bbb
+c bbc
+c bbd
+c bb 
+c bc
+c bca
+c bcb
+c bcc
+c bcd
+c bc 
+c bd
+c bda
+c bdb
+c bdc
+c bdd
+c bd 
+c b 
+c b a
+c b b
+c b c
+c b d
+c b  
+c c
+c ca
+c caa
+c cab
+c cac
+c cad
+c ca 
+c cb
+c cba
+c cbb
+c cbc
+c cbd
+c cb 
+c cc
+c cca
+c ccb
+c ccc
+c ccd
+c cc 
+c cd
+c cda
+c cdb
+c cdc
+c cdd
+c cd 
+c c 
+c c a
+c c b
+c c c
+c c d
+c c  
+c d
+c da
+c daa
+c dab
+c dac
+c dad
+c da 
+c db
+c dba
+c dbb
+c dbc
+c dbd
+c db 
+c dc
+c dca
+c dcb
+c dcc
+c dcd
+c dc 
+c dd
+c dda
+c ddb
+c ddc
+c ddd
+c dd 
+c d 
+c d a
+c d b
+c d c
+c d d
+c d  
+c  
+c  a
+c  aa
+c  ab
+c  ac
+c  ad
+c  a 
+c  b
+c  ba
+c  bb
+c  bc
+c  bd
+c  b 
+c  c
+c  ca
+c  cb
+c  cc
+c  cd
+c  c 
+c  d
+c  da
+c  db
+c  dc
+c  dd
+c  d 
+c   
+c   a
+c   b
+c   c
+c   d
+c    
+da
+daa
+daaa
+daaaa
+daaab
+daaac
+daaad
+daaa 
+daab
+daaba
+daabb
+daabc
+daabd
+daab 
+daac
+daaca
+daacb
+daacc
+daacd
+daac 
+daad
+daada
+daadb
+daadc
+daadd
+daad 
+daa 
+daa a
+daa b
+daa c
+daa d
+daa  
+dab
+daba
+dabaa
+dabab
+dabac
+dabad
+daba 
+dabb
+dabba
+dabbb
+dabbc
+dabbd
+dabb 
+dabc
+dabca
+dabcb
+dabcc
+dabcd
+dabc 
+dabd
+dabda
+dabdb
+dabdc
+dabdd
+dabd 
+dab 
+dab a
+dab b
+dab c
+dab d
+dab  
+dac
+daca
+dacaa
+dacab
+dacac
+dacad
+daca 
+dacb
+dacba
+dacbb
+dacbc
+dacbd
+dacb 
+dacc
+dacca
+daccb
+daccc
+daccd
+dacc 
+dacd
+dacda
+dacdb
+dacdc
+dacdd
+dacd 
+dac 
+dac a
+dac b
+dac c
+dac d
+dac  
+dad
+dada
+dadaa
+dadab
+dadac
+dadad
+dada 
+dadb
+dadba
+dadbb
+dadbc
+dadbd
+dadb 
+dadc
+dadca
+dadcb
+dadcc
+dadcd
+dadc 
+dadd
+dadda
+daddb
+daddc
+daddd
+dadd 
+dad 
+dad a
+dad b
+dad c
+dad d
+dad  
+da 
+da a
+da aa
+da ab
+da ac
+da ad
+da a 
+da b
+da ba
+da bb
+da bc
+da bd
+da b 
+da c
+da ca
+da cb
+da cc
+da cd
+da c 
+da d
+da da
+da db
+da dc
+da dd
+da d 
+da  
+da  a
+da  b
+da  c
+da  d
+da   
+db
+dba
+dbaa
+dbaaa
+dbaab
+dbaac
+dbaad
+dbaa 
+dbab
+dbaba
+dbabb
+dbabc
+dbabd
+dbab 
+dbac
+dbaca
+dbacb
+dbacc
+dbacd
+dbac 
+dbad
+dbada
+dbadb
+dbadc
+dbadd
+dbad 
+dba 
+dba a
+dba b
+dba c
+dba d
+dba  
+dbb
+dbba
+dbbaa
+dbbab
+dbbac
+dbbad
+dbba 
+dbbb
+dbbba
+dbbbb
+dbbbc
+dbbbd
+dbbb 
+dbbc
+dbbca
+dbbcb
+dbbcc
+dbbcd
+dbbc 
+dbbd
+dbbda
+dbbdb
+dbbdc
+dbbdd
+dbbd 
+dbb 
+dbb a
+dbb b
+dbb c
+dbb d
+dbb  
+dbc
+dbca
+dbcaa
+dbcab
+dbcac
+dbcad
+dbca 
+dbcb
+dbcba
+dbcbb
+dbcbc
+dbcbd
+dbcb 
+dbcc
+dbcca
+dbccb
+dbccc
+dbccd
+dbcc 
+dbcd
+dbcda
+dbcdb
+dbcdc
+dbcdd
+dbcd 
+dbc 
+dbc a
+dbc b
+dbc c
+dbc d
+dbc  
+dbd
+dbda
+dbdaa
+dbdab
+dbdac
+dbdad
+dbda 
+dbdb
+dbdba
+dbdbb
+dbdbc
+dbdbd
+dbdb 
+dbdc
+dbdca
+dbdcb
+dbdcc
+dbdcd
+dbdc 
+dbdd
+dbdda
+dbddb
+dbddc
+dbddd
+dbdd 
+dbd 
+dbd a
+dbd b
+dbd c
+dbd d
+dbd  
+db 
+db a
+db aa
+db ab
+db ac
+db ad
+db a 
+db b
+db ba
+db bb
+db bc
+db bd
+db b 
+db c
+db ca
+db cb
+db cc
+db cd
+db c 
+db d
+db da
+db db
+db dc
+db dd
+db d 
+db  
+db  a
+db  b
+db  c
+db  d
+db   
+dc
+dca
+dcaa
+dcaaa
+dcaab
+dcaac
+dcaad
+dcaa 
+dcab
+dcaba
+dcabb
+dcabc
+dcabd
+dcab 
+dcac
+dcaca
+dcacb
+dcacc
+dcacd
+dcac 
+dcad
+dcada
+dcadb
+dcadc
+dcadd
+dcad 
+dca 
+dca a
+dca b
+dca c
+dca d
+dca  
+dcb
+dcba
+dcbaa
+dcbab
+dcbac
+dcbad
+dcba 
+dcbb
+dcbba
+dcbbb
+dcbbc
+dcbbd
+dcbb 
+dcbc
+dcbca
+dcbcb
+dcbcc
+dcbcd
+dcbc 
+dcbd
+dcbda
+dcbdb
+dcbdc
+dcbdd
+dcbd 
+dcb 
+dcb a
+dcb b
+dcb c
+dcb d
+dcb  
+dcc
+dcca
+dccaa
+dccab
+dccac
+dccad
+dcca 
+dccb
+dccba
+dccbb
+dccbc
+dccbd
+dccb 
+dccc
+dccca
+dcccb
+dcccc
+dcccd
+dccc 
+dccd
+dccda
+dccdb
+dccdc
+dccdd
+dccd 
+dcc 
+dcc a
+dcc b
+dcc c
+dcc d
+dcc  
+dcd
+dcda
+dcdaa
+dcdab
+dcdac
+dcdad
+dcda 
+dcdb
+dcdba
+dcdbb
+dcdbc
+dcdbd
+dcdb 
+dcdc
+dcdca
+dcdcb
+dcdcc
+dcdcd
+dcdc 
+dcdd
+dcdda
+dcddb
+dcddc
+dcddd
+dcdd 
+dcd 
+dcd a
+dcd b
+dcd c
+dcd d
+dcd  
+dc 
+dc a
+dc aa
+dc ab
+dc ac
+dc ad
+dc a 
+dc b
+dc ba
+dc bb
+dc bc
+dc bd
+dc b 
+dc c
+dc ca
+dc cb
+dc cc
+dc cd
+dc c 
+dc d
+dc da
+dc db
+dc dc
+dc dd
+dc d 
+dc  
+dc  a
+dc  b
+dc  c
+dc  d
+dc   
+dd
+dda
+ddaa
+ddaaa
+ddaab
+ddaac
+ddaad
+ddaa 
+ddab
+ddaba
+ddabb
+ddabc
+ddabd
+ddab 
+ddac
+ddaca
+ddacb
+ddacc
+ddacd
+ddac 
+ddad
+ddada
+ddadb
+ddadc
+ddadd
+ddad 
+dda 
+dda a
+dda b
+dda c
+dda d
+dda  
+ddb
+ddba
+ddbaa
+ddbab
+ddbac
+ddbad
+ddba 
+ddbb
+ddbba
+ddbbb
+ddbbc
+ddbbd
+ddbb 
+ddbc
+ddbca
+ddbcb
+ddbcc
+ddbcd
+ddbc 
+ddbd
+ddbda
+ddbdb
+ddbdc
+ddbdd
+ddbd 
+ddb 
+ddb a
+ddb b
+ddb c
+ddb d
+ddb  
+ddc
+ddca
+ddcaa
+ddcab
+ddcac
+ddcad
+ddca 
+ddcb
+ddcba
+ddcbb
+ddcbc
+ddcbd
+ddcb 
+ddcc
+ddcca
+ddccb
+ddccc
+ddccd
+ddcc 
+ddcd
+ddcda
+ddcdb
+ddcdc
+ddcdd
+ddcd 
+ddc 
+ddc a
+ddc b
+ddc c
+ddc d
+ddc  
+ddd
+ddda
+dddaa
+dddab
+dddac
+dddad
+ddda 
+dddb
+dddba
+dddbb
+dddbc
+dddbd
+dddb 
+dddc
+dddca
+dddcb
+dddcc
+dddcd
+dddc 
+dddd
+dddda
+ddddb
+ddddc
+ddddd
+dddd 
+ddd 
+ddd a
+ddd b
+ddd c
+ddd d
+ddd  
+dd 
+dd a
+dd aa
+dd ab
+dd ac
+dd ad
+dd a 
+dd b
+dd ba
+dd bb
+dd bc
+dd bd
+dd b 
+dd c
+dd ca
+dd cb
+dd cc
+dd cd
+dd c 
+dd d
+dd da
+dd db
+dd dc
+dd dd
+dd d 
+dd  
+dd  a
+dd  b
+dd  c
+dd  d
+dd   
+d 
+d a
+d aa
+d aaa
+d aab
+d aac
+d aad
+d aa 
+d ab
+d aba
+d abb
+d abc
+d abd
+d ab 
+d ac
+d aca
+d acb
+d acc
+d acd
+d ac 
+d ad
+d ada
+d adb
+d adc
+d add
+d ad 
+d a 
+d a a
+d a b
+d a c
+d a d
+d a  
+d b
+d ba
+d baa
+d bab
+d bac
+d bad
+d ba 
+d bb
+d bba
+d bbb
+d bbc
+d bbd
+d bb 
+d bc
+d bca
+d bcb
+d bcc
+d bcd
+d bc 
+d bd
+d bda
+d bdb
+d bdc
+d bdd
+d bd 
+d b 
+d b a
+d b b
+d b c
+d b d
+d b  
+d c
+d ca
+d caa
+d cab
+d cac
+d cad
+d ca 
+d cb
+d cba
+d cbb
+d cbc
+d cbd
+d cb 
+d cc
+d cca
+d ccb
+d ccc
+d ccd
+d cc 
+d cd
+d cda
+d cdb
+d cdc
+d cdd
+d cd 
+d c 
+d c a
+d c b
+d c c
+d c d
+d c  
+d d
+d da
+d daa
+d dab
+d dac
+d dad
+d da 
+d db
+d dba
+d dbb
+d dbc
+d dbd
+d db 
+d dc
+d dca
+d dcb
+d dcc
+d dcd
+d dc 
+d dd
+d dda
+d ddb
+d ddc
+d ddd
+d dd 
+d d 
+d d a
+d d b
+d d c
+d d d
+d d  
+d  
+d  a
+d  aa
+d  ab
+d  ac
+d  ad
+d  a 
+d  b
+d  ba
+d  bb
+d  bc
+d  bd
+d  b 
+d  c
+d  ca
+d  cb
+d  cc
+d  cd
+d  c 
+d  d
+d  da
+d  db
+d  dc
+d  dd
+d  d 
+d   
+d   a
+d   b
+d   c
+d   d
+d    
+ a
+ aa
+ aaa
+ aaaa
+ aaab
+ aaac
+ aaad
+ aaa 
+ aab
+ aaba
+ aabb
+ aabc
+ aabd
+ aab 
+ aac
+ aaca
+ aacb
+ aacc
+ aacd
+ aac 
+ aad
+ aada
+ aadb
+ aadc
+ aadd
+ aad 
+ aa 
+ aa a
+ aa b
+ aa c
+ aa d
+ aa  
+ ab
+ aba
+ abaa
+ abab
+ abac
+ abad
+ aba 
+ abb
+ abba
+ abbb
+ abbc
+ abbd
+ abb 
+ abc
+ abca
+ abcb
+ abcc
+ abcd
+ abc 
+ abd
+ abda
+ abdb
+ abdc
+ abdd
+ abd 
+ ab 
+ ab a
+ ab b
+ ab c
+ ab d
+ ab  
+ ac
+ aca
+ acaa
+ acab
+ acac
+ acad
+ aca 
+ acb
+ acba
+ acbb
+ acbc
+ acbd
+ acb 
+ acc
+ acca
+ accb
+ accc
+ accd
+ acc 
+ acd
+ acda
+ acdb
+ acdc
+ acdd
+ acd 
+ ac 
+ ac a
+ ac b
+ ac c
+ ac d
+ ac  
+ ad
+ ada
+ adaa
+ adab
+ adac
+ adad
+ ada 
+ adb
+ adba
+ adbb
+ adbc
+ adbd
+ adb 
+ adc
+ adca
+ adcb
+ adcc
+ adcd
+ adc 
+ add
+ adda
+ addb
+ addc
+ addd
+ add 
+ ad 
+ ad a
+ ad b
+ ad c
+ ad d
+ ad  
+ a 
+ a a
+ a aa
+ a ab
+ a ac
+ a ad
+ a a 
+ a b
+ a ba
+ a bb
+ a bc
+ a bd
+ a b 
+ a c
+ a ca
+ a cb
+ a cc
+ a cd
+ a c 
+ a d
+ a da
+ a db
+ a dc
+ a dd
+ a d 
+ a  
+ a  a
+ a  b
+ a  c
+ a  d
+ a   
+ b
+ ba
+ baa
+ baaa
+ baab
+ baac
+ baad
+ baa 
+ bab
+ baba
+ babb
+ babc
+ babd
+ bab 
+ bac
+ baca
+ bacb
+ bacc
+ bacd
+ bac 
+ bad
+ bada
+ badb
+ badc
+ badd
+ bad 
+ ba 
+ ba a
+ ba b
+ ba c
+ ba d
+ ba  
+ bb
+ bba
+ bbaa
+ bbab
+ bbac
+ bbad
+ bba 
+ bbb
+ bbba
+ bbbb
+ bbbc
+ bbbd
+ bbb 
+ bbc
+ bbca
+ bbcb
+ bbcc
+ bbcd
+ bbc 
+ bbd
+ bbda
+ bbdb
+ bbdc
+ bbdd
+ bbd 
+ bb 
+ bb a
+ bb b
+ bb c
+ bb d
+ bb  
+ bc
+ bca
+ bcaa
+ bcab
+ bcac
+ bcad
+ bca 
+ bcb
+ bcba
+ bcbb
+ bcbc
+ bcbd
+ bcb 
+ bcc
+ bcca
+ bccb
+ bccc
+ bccd
+ bcc 
+ bcd
+ bcda
+ bcdb
+ bcdc
+ bcdd
+ bcd 
+ bc 
+ bc a
+ bc b
+ bc c
+ bc d
+ bc  
+ bd
+ bda
+ bdaa
+ bdab
+ bdac
+ bdad
+ bda 
+ bdb
+ bdba
+ bdbb
+ bdbc
+ bdbd
+ bdb 
+ bdc
+ bdca
+ bdcb
+ bdcc
+ bdcd
+ bdc 
+ bdd
+ bdda
+ bddb
+ bddc
+ bddd
+ bdd 
+ bd 
+ bd a
+ bd b
+ bd c
+ bd d
+ bd  
+ b 
+ b a
+ b aa
+ b ab
+ b ac
+ b ad
+ b a 
+ b b
+ b ba
+ b bb
+ b bc
+ b bd
+ b b 
+ b c
+ b ca
+ b cb
+ b cc
+ b cd
+ b c 
+ b d
+ b da
+ b db
+ b dc
+ b dd
+ b d 
+ b  
+ b  a
+ b  b
+ b  c
+ b  d
+ b   
+ c
+ ca
+ caa
+ caaa
+ caab
+ caac
+ caad
+ caa 
+ cab
+ caba
+ cabb
+ cabc
+ cabd
+ cab 
+ cac
+ caca
+ cacb
+ cacc
+ cacd
+ cac 
+ cad
+ cada
+ cadb
+ cadc
+ cadd
+ cad 
+ ca 
+ ca a
+ ca b
+ ca c
+ ca d
+ ca  
+ cb
+ cba
+ cbaa
+ cbab
+ cbac
+ cbad
+ cba 
+ cbb
+ cbba
+ cbbb
+ cbbc
+ cbbd
+ cbb 
+ cbc
+ cbca
+ cbcb
+ cbcc
+ cbcd
+ cbc 
+ cbd
+ cbda
+ cbdb
+ cbdc
+ cbdd
+ cbd 
+ cb 
+ cb a
+ cb b
+ cb c
+ cb d
+ cb  
+ cc
+ cca
+ ccaa
+ ccab
+ ccac
+ ccad
+ cca 
+ ccb
+ ccba
+ ccbb
+ ccbc
+ ccbd
+ ccb 
+ ccc
+ ccca
+ cccb
+ cccc
+ cccd
+ ccc 
+ ccd
+ ccda
+ ccdb
+ ccdc
+ ccdd
+ ccd 
+ cc 
+ cc a
+ cc b
+ cc c
+ cc d
+ cc  
+ cd
+ cda
+ cdaa
+ cdab
+ cdac
+ cdad
+ cda 
+ cdb
+ cdba
+ cdbb
+ cdbc
+ cdbd
+ cdb 
+ cdc
+ cdca
+ cdcb
+ cdcc
+ cdcd
+ cdc 
+ cdd
+ cdda
+ cddb
+ cddc
+ cddd
+ cdd 
+ cd 
+ cd a
+ cd b
+ cd c
+ cd d
+ cd  
+ c 
+ c a
+ c aa
+ c ab
+ c ac
+ c ad
+ c a 
+ c b
+ c ba
+ c bb
+ c bc
+ c bd
+ c b 
+ c c
+ c ca
+ c cb
+ c cc
+ c cd
+ c c 
+ c d
+ c da
+ c db
+ c dc
+ c dd
+ c d 
+ c  
+ c  a
+ c  b
+ c  c
+ c  d
+ c   
+ d
+ da
+ daa
+ daaa
+ daab
+ daac
+ daad
+ daa 
+ dab
+ daba
+ dabb
+ dabc
+ dabd
+ dab 
+ dac
+ daca
+ dacb
+ dacc
+ dacd
+ dac 
+ dad
+ dada
+ dadb
+ dadc
+ dadd
+ dad 
+ da 
+ da a
+ da b
+ da c
+ da d
+ da  
+ db
+ dba
+ dbaa
+ dbab
+ dbac
+ dbad
+ dba 
+ dbb
+ dbba
+ dbbb
+ dbbc
+ dbbd
+ dbb 
+ dbc
+ dbca
+ dbcb
+ dbcc
+ dbcd
+ dbc 
+ dbd
+ dbda
+ dbdb
+ dbdc
+ dbdd
+ dbd 
+ db 
+ db a
+ db b
+ db c
+ db d
+ db  
+ dc
+ dca
+ dcaa
+ dcab
+ dcac
+ dcad
+ dca 
+ dcb
+ dcba
+ dcbb
+ dcbc
+ dcbd
+ dcb 
+ dcc
+ dcca
+ dccb
+ dccc
+ dccd
+ dcc 
+ dcd
+ dcda
+ dcdb
+ dcdc
+ dcdd
+ dcd 
+ dc 
+ dc a
+ dc b
+ dc c
+ dc d
+ dc  
+ dd
+ dda
+ ddaa
+ ddab
+ ddac
+ ddad
+ dda 
+ ddb
+ ddba
+ ddbb
+ ddbc
+ ddbd
+ ddb 
+ ddc
+ ddca
+ ddcb
+ ddcc
+ ddcd
+ ddc 
+ ddd
+ ddda
+ dddb
+ dddc
+ dddd
+ ddd 
+ dd 
+ dd a
+ dd b
+ dd c
+ dd d
+ dd  
+ d 
+ d a
+ d aa
+ d ab
+ d ac
+ d ad
+ d a 
+ d b
+ d ba
+ d bb
+ d bc
+ d bd
+ d b 
+ d c
+ d ca
+ d cb
+ d cc
+ d cd
+ d c 
+ d d
+ d da
+ d db
+ d dc
+ d dd
+ d d 
+ d  
+ d  a
+ d  b
+ d  c
+ d  d
+ d   
+  
+  a
+  aa
+  aaa
+  aab
+  aac
+  aad
+  aa 
+  ab
+  aba
+  abb
+  abc
+  abd
+  ab 
+  ac
+  aca
+  acb
+  acc
+  acd
+  ac 
+  ad
+  ada
+  adb
+  adc
+  add
+  ad 
+  a 
+  a a
+  a b
+  a c
+  a d
+  a  
+  b
+  ba
+  baa
+  bab
+  bac
+  bad
+  ba 
+  bb
+  bba
+  bbb
+  bbc
+  bbd
+  bb 
+  bc
+  bca
+  bcb
+  bcc
+  bcd
+  bc 
+  bd
+  bda
+  bdb
+  bdc
+  bdd
+  bd 
+  b 
+  b a
+  b b
+  b c
+  b d
+  b  
+  c
+  ca
+  caa
+  cab
+  cac
+  cad
+  ca 
+  cb
+  cba
+  cbb
+  cbc
+  cbd
+  cb 
+  cc
+  cca
+  ccb
+  ccc
+  ccd
+  cc 
+  cd
+  cda
+  cdb
+  cdc
+  cdd
+  cd 
+  c 
+  c a
+  c b
+  c c
+  c d
+  c  
+  d
+  da
+  daa
+  dab
+  dac
+  dad
+  da 
+  db
+  dba
+  dbb
+  dbc
+  dbd
+  db 
+  dc
+  dca
+  dcb
+  dcc
+  dcd
+  dc 
+  dd
+  dda
+  ddb
+  ddc
+  ddd
+  dd 
+  d 
+  d a
+  d b
+  d c
+  d d
+  d  
+   
+   a
+   aa
+   ab
+   ac
+   ad
+   a 
+   b
+   ba
+   bb
+   bc
+   bd
+   b 
+   c
+   ca
+   cb
+   cc
+   cd
+   c 
+   d
+   da
+   db
+   dc
+   dd
+   d 
+    
+    a
+    b
+    c
+    d
+     
