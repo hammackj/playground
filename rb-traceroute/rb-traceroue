@@ -1,0 +1,69 @@
+#!/usr/bin/env ruby -wKU
+
+#Jacob Hammack
+#rb-traceroute
+#Port of http://blog.ksplice.com/2010/07/learning-by-doing-writing-your-own-traceroute-in-8-easy-steps/
+# to ruby
+
+require 'socket'
+require 'timeout'
+
+begin
+	if ARGV[0] == nil
+		exit(1)
+	end
+		
+	target = IPSocket.getaddress(ARGV[0])
+
+	port = 33434
+	ttl = 1
+	max_hops = 30
+	
+	while true
+		icmp = Socket.new(Socket::AF_INET, Socket::SOCK_RAW, Socket::IPPROTO_ICMP)
+		icmp.bind(Socket.pack_sockaddr_in(port, ''))
+		
+		udp = Socket.new(Socket::AF_INET, Socket::SOCK_DGRAM, Socket::IPPROTO_UDP)
+		udp.setsockopt(0, Socket::IP_TTL, ttl)
+		udp.connect(Socket.pack_sockaddr_in(port, ARGV[0]))
+		udp.puts ""
+		
+		curr_addr = nil
+		curr_name = nil
+
+		begin
+			Timeout.timeout(1) do
+				data, sender = icmp.recvfrom(512)			
+				curr_addr = Socket.unpack_sockaddr_in(sender)[1].to_s
+			end
+			
+			begin
+				curr_name = Socket.getaddrinfo(curr_addr 0, Socket::AF_UNSPEC, Socket::SOCK_STREAM, nil, Socket::AI_CANONNAME)[0][2]
+			rescue => e
+				curr_name = curr_addr
+			end			
+		
+			if curr_addr.empty?
+				curr_host = "*"				
+			else
+				curr_host = "#{curr_name} (#{curr_addr})"
+			end
+		
+			puts "#{ttl}\t#{curr_host}"
+						
+			if curr_addr == target or ttl > max_hops
+				break
+			end	
+		rescue Timeout::Error
+			puts "#{ttl}\t*"
+		ensure
+			icmp.close()
+			udp.close()
+		end
+		
+		ttl = ttl + 1
+	end
+rescue Exception => e
+	#puts "#{e.message}\n#{e.backtrace}\n"
+	raise e
+end
