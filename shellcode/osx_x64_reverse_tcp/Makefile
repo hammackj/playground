@@ -12,6 +12,10 @@ asm: reverse_tcp1.s
 	/opt/local/bin/nasm -f macho64 reverse_tcp1.s -o reverse_tcp1.o
 	ld -arch x86_64 reverse_tcp1.o -o reverse_shell
 
+rev: reverse_tcp2.s
+	/opt/local/bin/nasm -f macho64 reverse_tcp2.s -o reverse_tcp2.o
+	ld -arch x86_64 reverse_tcp2.o -o reverse_shell2
+
 shell: spawn_shell.s
 	/opt/local/bin/nasm -f macho64 spawn_shell.s -o spawn_shell.o
 	ld -arch x86_64 -macosx_version_min 10.6 spawn_shell.o -o spawn_shell
@@ -19,4 +23,5 @@ shell: spawn_shell.s
 clean:
 	rm -rf ${FILE}
 	rm -rf *.dSYM/
+	rm *.o reverse_shell reverse_shell2
 
