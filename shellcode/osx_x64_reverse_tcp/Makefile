@@ -20,6 +20,9 @@ shell: spawn_shell.s
 	/opt/local/bin/nasm -f macho64 spawn_shell.s -o spawn_shell.o
 	ld -arch x86_64 -macosx_version_min 10.6 spawn_shell.o -o spawn_shell
 
+tester: sc_tester.c
+	${CC} sc_tester.c -o sc_tester
+
 clean:
 	rm -rf ${FILE}
 	rm -rf *.dSYM/
