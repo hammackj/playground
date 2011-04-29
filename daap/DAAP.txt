@@ -1,0 +1,389 @@
+GET daap://10.69.69.10:3689/server-info HTTP/1.1
+Accept: */*
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+Client-DAAP-Access-Index: 2
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 246
+Content-Encoding: gzip
+
+..........E.;n.1....n.HiR...
+...R..'B.).X.,......q
+r...ir.\"E...z.P.~3c{d..7..&.
+....K.[yGP.tI..g$......q..N..
+.}1\....5,l". F.. ...@5...E..}..H.>:..;..+.If.J..-.mb...b..MY...z..}.\...o.gN..T... .L..%b..\3y....i.a.Q...X...3.F....;.....g...6aLy...GET /login HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 47
+Content-Encoding: gzip
+
+.............Og``..-.)..,@|"7'3.....<....._ ...POST /fp-setup?session-id=1411101596 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Accept-Encoding: gzip
+Content-Length: 16
+Content-Type: application/octet-stream
+
+FPLY............HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/octet-stream
+Content-Length: 165
+Content-Encoding: gzip
+
+.............q.FPLY...........B..5.'%........U....H...._6vpzzW...s....c...|.~[...).r.T.
+...WZ.m.....{..Z.. >=.]3.x..1.;}{o....9./P..q....J.|.......-fc...;...........POST /fp-setup?session-id=1411101596 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Accept-Encoding: gzip
+Content-Length: 164
+Content-Type: application/octet-stream
+
+FPLY............15.{.]m......
+.f.......0......X...o.r....#.........q..O............Dd!........k....y.~g,......aM.`..Q..M.8}..C.E..&...u....IX>.q.d.U?...T.Vu2..GY...HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/octet-stream
+Content-Length: 51
+Content-Encoding: gzip
+
+..........s...dbda....).B./.}.i.+5..........ebq ...GET /update?session-id=1411101596&revision-number=1 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C000000004144E0485C3414AE772D3BA131DC34AE000000103B65F8514F3D8FA934A1D29A042CF322DBBC3BAD0723F50387C59D5D5BE55E5B97E79D90
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 44
+Content-Encoding: gzip
+
+...........--Ha``..-.)..,@|".....f...24Q ...GET /databases?session-id=1411101596&revision-number=3 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C0000000096059D91BDC24A0C6164EF1F9014BEAB00000010DC2C1C93B717B2B62BE9FC040458B52E5E949780F63B36CE3F989BB9DE800BCD7A95EB36
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 160
+Content-Encoding: gzip
+
+..........K,KIb``8.[\R..Y..DniI%.fd.-I..
+2..!.s.s.tOnN&HSKnff
+T.1. ..Hsxd/.........
+.......{.x.....Wnf^../..........af..OfRQbQenfn2T.Cnr.......
+.OM).....6.&....GET /databases/65/items?type=music&meta=all&session-id=1411101596&revision-number=3 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C000000008B617E83C187021CC17E17FAA2CFF6C2000000108A77B372D9687B3C98FDABC0B8987AB7FD1B66EE083CCBD42514659BF4349F504446150E
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 60
+Content-Encoding: gzip
+
+..........KLI*f``0.-.)..,@|"....H32..$.C..r...9.9 ....!.=...GET /databases/65/containers?meta=dmap.itemid,dmap.itemname,dmap.persistentid,com.apple.itunes.smart-playlist,dmap.haschildcontainers,dmap.parentcontainerid,com.apple.itunes.is-podcast-playlist,com.apple.itunes.special-playlist,com.apple.itunes.saved-genius&session-id=1411101596&revision-number=3 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C00000000A47943DAAECE818528CDDBF296357AF200000010BF1CB7889002C1AB47FAF227DD7C91E37B16F79655023F8EB2DC551D8C1EE60030B64FAC
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 548
+Content-Encoding: gzip
+
+..........K,..d``m.-.)a```.....%@1.F....|. .n..;'9...'7'..)2733.*..[.Z..96I.d~...anf^../..........af..OfRQbQebRA.."..........p6..`$..a..j....t5.Z..[Z.......abbj@0H.
+..!HFg......f...3.h6.....b.f.`1;...\...N.rj...B....S.../.o:+..}.L...>ma.."O..0...S...K......P?$CS`..,.2w.V}
+5.33.4/....Pl........O..7.}.....S~~6.P`.b.7...0...zMjg54...{j^f).0..bd ...0#...^[..:.j$...8!.Nt..Z8..O..;..{o......X.23.4.....3.$j.....2`..........=.....38/...$...p.+.B.....KRS.5.9Q...6.Ui.o..~..|A...y%9.
+.)).....~0...=.x.f.>,..F..$V.ov8...0.c..X...vC........o~q.....}.}.....GET /databases/65/containers/66/items?type=music&meta=dmap.itemkind,dmap.itemid,dmap.containeritemid&session-id=1411101596&revision-number=3 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C0000000049C1C1EE7B86B932649FD0B57BA1FBE7000000102AFE0498E232F0D48066B19814E3C67CDBD4B11277ED181BF5891F6AFBA5535369C61637
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 60
+Content-Encoding: gzip
+
+..........K,(.g``0.-.)..,@|"....H32..$.C..r...9.9 .._...=...GET /databases/65/containers/103/items?type=music&meta=dmap.itemkind,dmap.itemid,dmap.containeritemid&session-id=1411101596&revision-number=3 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C00000000BB4B1B83FF956F7921B5E2C3E1F91E60000000103A01B541A8FD0982A8C3B0753655C70A665853D16DA785075438E0635DBE446ED81AA90F
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 60
+Content-Encoding: gzip
+
+..........K,(.g``0.-.)..,@|"....H32..$.C..r...9.9 .._...=...GET /databases/65/containers/106/items?type=music&meta=dmap.itemkind,dmap.itemid,dmap.containeritemid&session-id=1411101596&revision-number=3 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C0000000062289F93EE183F685FFD846210AD4790000000102238A49C6A9F85B4397FA17A54482AB455B6CE83628C2EA6C0065C3E03A3FE5B3E75427C
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 60
+Content-Encoding: gzip
+
+..........K,(.g``0.-.)..,@|"....H32..$.C..r...9.9 .._...=...GET /databases/65/containers/109/items?type=music&meta=dmap.itemkind,dmap.itemid,dmap.containeritemid&session-id=1411101596&revision-number=3 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C0000000019CF2D725F2E823FE6B36EAD2BBB182C00000010789AFAF96A845212B0D1081983127CEF5E432C98B415C78EA3E5BBFD426C6C9B99A90629
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 60
+Content-Encoding: gzip
+
+..........K,(.g``0.-.)..,@|"....H32..$.C..r...9.9 .._...=...GET /databases/65/containers/93/items?type=music&meta=dmap.itemkind,dmap.itemid,dmap.containeritemid&session-id=1411101596&revision-number=3 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C00000000278C1ECE4482B0AB6E111BA78D92F3D5000000101C46370C98EE3A8BDA4FF141F93520ADA06E0676E39CAA28EF36B44BCA73DE17621E38B1
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 60
+Content-Encoding: gzip
+
+..........K,(.g``0.-.)..,@|"....H32..$.C..r...9.9 .._...=...GET /databases/65/containers/100/items?type=music&meta=dmap.itemkind,dmap.itemid,dmap.containeritemid&session-id=1411101596&revision-number=3 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C0000000041C620D486BC2F539EF3B4D2AB4945DD000000107CF021AD85492BE4C6C113088BFA1426C5A934EC6EC8045213B252E10B779349717A9B66
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 60
+Content-Encoding: gzip
+
+..........K,(.g``0.-.)..,@|"....H32..$.C..r...9.9 .._...=...GET /databases/65/containers/112/items?type=music&meta=dmap.itemkind,dmap.itemid,dmap.containeritemid&session-id=1411101596&revision-number=3 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C00000000B0F6361304C3FBB98937C14BA3BCB7D2000000107D555A556D7C518A868B652BB5233819E4DCB34657A78F8F7E709F39B9E9B8D6160F5D32
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 60
+Content-Encoding: gzip
+
+..........K,(.g``0.-.)..,@|"....H32..$.C..r...9.9 .._...=...GET /databases/65/containers/121/items?type=music&meta=dmap.itemkind,dmap.itemid,dmap.containeritemid&session-id=1411101596&revision-number=3 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C00000000786C466F2B934C25179F83E14063A914000000105B53495B3CCCB80B34CCE6146341AC20792A6F723A63ED93E79EBBEA3ADDC0C19B38C3F7
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 60
+Content-Encoding: gzip
+
+..........K,(.g``0.-.)..,@|"....H32..$.C..r...9.9 .._...=...GET /databases/65/containers/69/items?type=music&meta=dmap.itemkind,dmap.itemid,dmap.containeritemid&session-id=1411101596&revision-number=3 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C00000000D2AF9880650D0BE57B346F2A1CD5283700000010018D4C78B7738D2F2B668B9F6341561808134052D5D0D924A6469C5C0EBDFE23AAEBE5F8
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 60
+Content-Encoding: gzip
+
+..........K,(.g``0.-.)..,@|"....H32..$.C..r...9.9 .._...=...GET /databases/65/containers/87/items?type=music&meta=dmap.itemkind,dmap.itemid,dmap.containeritemid&session-id=1411101596&revision-number=3 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C000000006463D1BF77FB105586C8F1A3B4D34CD700000010A56E447EBBF48C944E055E29D2B581E4A50AD06F5B3F519B9E62812183AD2DECFC66BA9F
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 60
+Content-Encoding: gzip
+
+..........K,(.g``0.-.)..,@|"....H32..$.C..r...9.9 .._...=...GET /databases/65/containers/84/items?type=music&meta=dmap.itemkind,dmap.itemid,dmap.containeritemid&session-id=1411101596&revision-number=3 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C00000000358B13FCB221ACA03D9AE4C5907BC88B00000010059BC486BC5AC19205230A71E606ADA3A8762772FA5C92CAF91D286EC79895D203888A44
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 60
+Content-Encoding: gzip
+
+..........K,(.g``0.-.)..,@|"....H32..$.C..r...9.9 .._...=...GET /databases/65/containers/72/items?type=music&meta=dmap.itemkind,dmap.itemid,dmap.containeritemid&session-id=1411101596&revision-number=3 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C00000000C00F32350ACB401BC578C3E3220A578500000010796B738AD42B7A5B926ED4313480732B99A7858525BA134331D19A7D474F03F98177FDA7
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 60
+Content-Encoding: gzip
+
+..........K,(.g``0.-.)..,@|"....H32..$.C..r...9.9 .._...=...GET /databases/65/containers/81/items?type=music&meta=dmap.itemkind,dmap.itemid,dmap.containeritemid&session-id=1411101596&revision-number=3 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C000000007989DA016035CA8E87541E1012E7EDCD00000010700BA44B29C0264FA2A02DB5DA8A6305D7ED443760D6EF0F166D8A2E87B418B76A418BE3
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 60
+Content-Encoding: gzip
+
+..........K,(.g``0.-.)..,@|"....H32..$.C..r...9.9 .._...=...GET /databases/65/containers/78/items?type=music&meta=dmap.itemkind,dmap.itemid,dmap.containeritemid&session-id=1411101596&revision-number=3 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C00000000F6A7A78194BE9D89E75412431E5AA36900000010AEF0B9875B68690828E5178653AA486B29BECEE79EAAFD89F8129D93FF6FA74FA5485666
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 60
+Content-Encoding: gzip
+
+..........K,(.g``0.-.)..,@|"....H32..$.C..r...9.9 .._...=...GET /databases/65/containers/75/items?type=music&meta=dmap.itemkind,dmap.itemid,dmap.containeritemid&session-id=1411101596&revision-number=3 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C0000000002D42F01112545C830295B515459535C000000107705CB9F67DA30A2E43B98550F3CD5003DF4A76B9DE8283DED82553E501C88D71C528CD9
+Accept-Encoding: gzip
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Apr 2011 00:21:53 GMT
+DAAP-Server: iTunes/10.2.1 (Mac OS X)
+Content-Type: application/x-dmap-tagged
+Content-Length: 60
+Content-Encoding: gzip
+
+..........K,(.g``0.-.)..,@|"....H32..$.C..r...9.9 .._...=...GET /update?session-id=1411101596&revision-number=3&delta=3 HTTP/1.1
+Host: 10.69.69.10:3689
+Client-DAAP-Version: 3.11
+User-Agent: iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.6.7) AppleWebKit/533.21.1
+ITSharing-Version: 3.6
+Accept-Language: en-us, en;q=0.50
+Client-DAAP-Validation: 46504C59010201000000003C00000000E00EEEDA9F0A39E718C7610679DDEF2B000000102DB784910037F8DCB95DEEA0DA9A5AAE81A13B5EE640BF4EE7AF2E29D567B52D6141C199
+Accept-Encoding: gzip
