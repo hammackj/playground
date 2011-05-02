@@ -30,5 +30,5 @@ tester: sc_tester.c
 clean:
 	rm -rf ${FILE}
 	rm -rf *.dSYM/
-	rm *.o reverse_shell reverse_shell2 sc_tester
+	rm *.o reverse_shell reverse_shell2 sc_tester reverse_shell3
 
