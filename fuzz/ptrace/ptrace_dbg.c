@@ -1,24 +1,59 @@
 #include <stdio.h>
-#include <sys/ptrace.h>
+#include <unistd.h>
 #include <sys/types.h>
+#include <sys/ptrace.h>
 #include <sys/wait.h>
+#include <mach/mach.h>
+#include <errno.h>
+#include <stdlib.h>
 
 int main(int argc, const char *argv[])
 {
-	pid_t pid;
-	struct user_regs_struct regs;
+	int pid;
+	kern_return_t kret;
+	mach_port_t task;
+	thread_act_port_array_t threadList;
+	mach_msg_type_number_t threadCount;
+	x86_thread_state64_t state;
 
 	pid = atoi(argv[1]);
 
-	if (ptrace(PT_ATTACH, pid, NULL, NULL))
-	{
-		perror("Perror");
-	}
- 
-	memset( &regs, 0, sizeof( regs ) );
-	ptrace( PTRACE_GETREGS, child, NULL, &regs );
-	printf( "RIP before resuming child is %lx\n", regs.rip );
+	kret = task_for_pid(mach_task_self(), pid, &task);
 
-	
+	if (kret != KERN_SUCCESS)
+	{
+		printf("task_for_pid() failed with message %s!\n", mach_error_string(kret));
+	}
+
+	kret = task_threads(task, &threadList, &threadCount);
+
+	if (kret!=KERN_SUCCESS)
+	{
+		printf("task_threads() failed with message %s!\n", mach_error_string(kret));
+		exit(0);
+	}
+
+	mach_msg_type_number_t stateCount = x86_THREAD_STATE64_COUNT;
+
+	kret = thread_get_state(threadList[0], x86_THREAD_STATE64, (thread_state_t)&state, &stateCount);
+
+	if (kret!=KERN_SUCCESS)
+	{
+		printf("thread_get_state() failed with message %s!\n", mach_error_string(kret));
+		exit(0);
+	}
+
+	printf("Thread %d has %d threads. Thread 0 state: \n", pid, threadCount);
+	//printf("EIP: %lx\nEAX: %lx\nEBX: %lx\nECX: %lx\nEDX: %lx\nSS: %lx\n",state.__eip,state.__eax,state.__ebx,state.__ecx,state.__edx,state.__ss);
+
+	printf("RIP %llu\n", state.__rip);
+	printf("RBX %llu\n", state.__rbx);
+	printf("RCX %llu\n", state.__rcx);
+	printf("RDX %llu\n", state.__rdx);
+	printf("RDI %llu\n", state.__rdi);
+	printf("RSI %llu\n", state.__rsi);
+	printf("RBP %llu\n", state.__rbp);
+	printf("RSP %llu\n", state.__rsp);
+
 	return 0;
 }

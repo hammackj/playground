@@ -16,6 +16,8 @@ puts "[!] Attaching to PID #{ARGV[0]}"
 d = DebugVulnC.new(ARGV[0].to_i)
 d.attach
 
+puts "[*] Attached"
+
 # set breakpoint for lpwd
 #d.breakpoint_set(0x420f,‘lpwd’, (bpl = lambda do | t, r, s | puts "#{ s.breakpoints[r.eip].first.function } hit in thread #{ t }\n"; end))
 #d.install_breakpoints
