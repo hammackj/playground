@@ -34,6 +34,9 @@ int main(int argc, const char *argv[])
 	}
 
 	mach_msg_type_number_t stateCount = x86_THREAD_STATE64_COUNT;
+	
+	printf("stateCount => %d\n", stateCount);
+	
 
 	kret = thread_get_state(threadList[0], x86_THREAD_STATE64, (thread_state_t)&state, &stateCount);
 
@@ -46,14 +49,14 @@ int main(int argc, const char *argv[])
 	printf("Thread %d has %d threads. Thread 0 state: \n", pid, threadCount);
 	//printf("EIP: %lx\nEAX: %lx\nEBX: %lx\nECX: %lx\nEDX: %lx\nSS: %lx\n",state.__eip,state.__eax,state.__ebx,state.__ecx,state.__edx,state.__ss);
 
-	printf("RIP %llu\n", state.__rip);
-	printf("RBX %llu\n", state.__rbx);
-	printf("RCX %llu\n", state.__rcx);
-	printf("RDX %llu\n", state.__rdx);
-	printf("RDI %llu\n", state.__rdi);
-	printf("RSI %llu\n", state.__rsi);
-	printf("RBP %llu\n", state.__rbp);
-	printf("RSP %llu\n", state.__rsp);
+	printf("RIP 0x%llx\n", state.__rip);
+	printf("RBX 0x%llx\n", state.__rbx);
+	printf("RCX 0x%llx\n", state.__rcx);
+	printf("RDX 0x%llx\n", state.__rdx);
+	printf("RDI 0x%llx\n", state.__rdi);
+	printf("RSI 0x%llx\n", state.__rsi);
+	printf("RBP 0x%llx\n", state.__rbp);
+	printf("RSP 0x%llx\n", state.__rsp);
 
 	return 0;
 }
