@@ -2,7 +2,7 @@ CC=gcc
 CFLAGS=-g -Wall
 LDFLAGS=-framework OpenGL -framework Glut
 
-all: fullscreen vertexbuffer cubes
+all: fullscreen vertexbuffer cubes floor
 
 fullscreen: fullscreen.c
 	$(CC) $(CFLAGS) -o fullscreen fullscreen.c $(LDFLAGS)
@@ -13,8 +13,12 @@ vertexbuffer: vertexbuffer.c
 cubes: cubes.c
 	$(CC) $(CFLAGS) -o cubes cubes.c $(LDFLAGS)	
 
+floor: floor.c
+	$(CC) $(CFLAGS) -o floor floor.c $(LDFLAGS)
+
 clean:
 	rm -rf *.dSYM
 	rm fullscreen
 	rm vertexbuffer
 	rm cubes
+	rm floor

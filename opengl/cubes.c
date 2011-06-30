@@ -64,11 +64,6 @@ void camera (void)
 	glTranslatef(xpos, ypos, zpos);
 	glRotatef(45.0f, 0.0f, 0.0f, 1.0f);
 	glRotatef(45.0f, -1.0f, 1.0f, 0.0f);
-	
-	
-    //glRotatef(xrot,1.0,0.0,0.0); 
-    //glRotatef(yrot,0.0,1.0,0.0); 
-    //glTranslated(-xpos,-ypos,-zpos); 
 }
 
 void display (void) 
@@ -99,7 +94,6 @@ void display (void)
 			for(j = 0.0f; j < (GLfloat) MAP_MAX_Y; j += 1.0f)
 			{
 				int r = 0;
-				
 				
 				for (r = 0; r < map[(int)i][(int)j]; r++)
 				{
