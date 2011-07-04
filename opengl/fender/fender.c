@@ -16,5 +16,6 @@ void fender_shutdown(void)
 	log_write(GENERAL, "Log shutdown.\n");
 	log_write(GENERAL, "Fender shutdown.\n");
 	log_close();
+	
 	exit(0);
 }

@@ -14,10 +14,10 @@
 #include <OpenGL/glu.h>
 
 #include "fmath.h"
-#include "fcamera.h"
 #include "flog.h"
 #include "frenderer.h"
 #include "finput.h"
+#include "fcamera.h"
 
 void fender_init(void);
 void fender_shutdown(void);

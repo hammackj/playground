@@ -3,13 +3,12 @@
 
 #include "fender.h"
 
-typedef struct
+typedef struct vector3_t
 {
 	float x;
 	float y;
 	float z;
 } vector3_t;
-
 
 float vector3_length(vector3_t *v);
 void vector3_normalize(vector3_t *v);

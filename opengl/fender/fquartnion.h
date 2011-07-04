@@ -15,8 +15,6 @@ void quartnion_subtract(quartnion_t q1, quartnion_t q2);
 void quartnion_multiply(quartnion_t q1, quartnion_t q2);
 void quartnion_divide(quartnion_t q1, quartnion_t q2);
 
-
-
 //Matrix Conversion
 void quartnion_to_matrix3();
 void quartnion_to_matrix4();
