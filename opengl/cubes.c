@@ -8,8 +8,8 @@
 #include <OpenGL/gl.h>
 #include <OpenGL/glu.h>
 
-#define MAP_MAX_X 200
-#define MAP_MAX_Y 200
+#define MAP_MAX_X 100
+#define MAP_MAX_Y 100
 
 
 int map[MAP_MAX_X][MAP_MAX_Y];
@@ -69,6 +69,8 @@ void camera (void)
 void display (void) 
 {
 	GLfloat i, j =0;
+	int x, y=0;
+	int dir;
 		/* Clear the buffer, clear the matrix */
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		glLoadIdentity();
@@ -76,6 +78,37 @@ void display (void)
     gluLookAt (0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0); 
     //camera position, x,y,z, looking at x,y,z, Up Positions of the camera
     camera();
+
+		for(x = 0; x < MAP_MAX_X; ++x)
+		{
+			for(y = 0; y < MAP_MAX_Y; ++y)
+			{
+				
+				dir = (int)((rand() /(RAND_MAX + 1.0)) * 2);
+				
+				if (dir == 0)
+				{
+					map[x][y]--;
+				}
+				else
+				{
+					map[x][y]++;
+				}
+				
+				if (map[x][y] == 0)
+				{
+					map[x][y] = 1;
+				}
+				else
+				if (map[x][y] > 10)
+				{
+					map[x][y]--;
+				}
+				
+
+				
+			}
+		}
 
 
 		/* A step backward, then spin the cube */
