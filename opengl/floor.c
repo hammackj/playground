@@ -8,11 +8,18 @@
 #include <OpenGL/gl.h>
 #include <OpenGL/glu.h>
 
-#define MAP_MAX_X 100
-#define MAP_MAX_Y 100
+#define MAP_MAX_X 50
+#define MAP_MAX_Y 50
 
 
 int map[MAP_MAX_X][MAP_MAX_Y];
+
+int frame=0;
+long timez, timebase=0;
+
+char s[50];
+
+int g_h, g_w = 0;
 
 //angle of rotation
 GLfloat xpos = 0, ypos = 0, zpos = 0, xrot = 0, yrot = 90, angle=0.0;
@@ -50,9 +57,50 @@ GLfloat colors[] =
   0, 0, 1,   0, 1, 1,   1, 1, 1,   1, 0, 1
 };
 
+void renderBitmapString(float x, float y, float z, void *font, char *string) 
+{
+	char *c;
+	glRasterPos3f(x, y,z);
+	for (c=string; *c != '\0'; c++) 
+	{
+		glutBitmapCharacter(font, *c);
+	}
+}
+
+void restorePerspectiveProjection() {
+
+	glMatrixMode(GL_PROJECTION);
+	// restore previous projection matrix
+	glPopMatrix();
+
+	// get back to modelview mode
+	glMatrixMode(GL_MODELVIEW);
+}
+
+void setOrthographicProjection() {
+
+	// switch to projection mode
+	glMatrixMode(GL_PROJECTION);
+
+	// save previous matrix which contains the
+	//settings for the perspective projection
+	glPushMatrix();
+
+	// reset matrix
+	glLoadIdentity();
+
+	// set a 2D orthographic projection
+	gluOrtho2D(0, g_w, g_h, 0);
+
+	// switch back to modelview mode
+	glMatrixMode(GL_MODELVIEW);
+}
+
 void init (void) 
 {
     glEnable (GL_DEPTH_TEST); //enable the depth testing
+//		glEnable(GL_CULL_FACE);
+//		glCullFace(GL_BACK); 
     //glEnable (GL_LIGHTING); //enable the lighting
     //glEnable (GL_LIGHT0); //enable LIGHT0, our Diffuse Light
     glShadeModel (GL_SMOOTH); //set the shader to smooth shader
@@ -66,6 +114,28 @@ void camera (void)
 	glRotatef(45.0f, -1.0f, 1.0f, 0.0f);
 }
 
+void fps (void)
+{
+	frame++;
+
+	timez = glutGet(GLUT_ELAPSED_TIME);
+	if ((timez - timebase) > 1000) 
+	{
+		sprintf(s,"FPS:%4.2f", frame*1000.0/(timez-timebase));
+		timebase = timez;
+		frame = 0;
+	}
+
+	setOrthographicProjection();
+
+	glPushMatrix();
+	glLoadIdentity();
+	renderBitmapString(5,30,0,GLUT_BITMAP_HELVETICA_18,s);
+	glPopMatrix();
+
+	restorePerspectiveProjection();
+}
+
 void display (void) 
 {
 	GLfloat i, j =0;
@@ -76,10 +146,10 @@ void display (void)
     gluLookAt (0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0); 
     //camera position, x,y,z, looking at x,y,z, Up Positions of the camera
     camera();
-
+		fps();
 
 		/* A step backward, then spin the cube */
-		glTranslatef(0, 0, -10);
+		glTranslatef(0, 0, -5.0f);
 		//glRotatef(30, 1, 0, 0);
 	//	glRotatef(alpha, 0, 1, 0);
 
@@ -111,6 +181,9 @@ void display (void)
 
 void reshape (int w, int h) 
 {
+	g_w = w;
+	g_h = h;
+	
     glViewport (0, 0, (GLsizei)w, (GLsizei)h); //set the viewport to the current window specifications
     glMatrixMode (GL_PROJECTION); //set the matrix to projection
     
@@ -212,7 +285,7 @@ void keyboard (unsigned char key, int x, int y)
 int main (int argc, char **argv) 
 {
 	int x, y = 0;
-	unsigned int iseed = (unsigned int)time(NULL);
+	unsigned int iseed = (unsigned int) time(NULL);
 	
 	srand (iseed);
 		
@@ -224,20 +297,18 @@ int main (int argc, char **argv)
 		}
 	}
 	
-	
-	
-    glutInit (&argc, argv);
-    glutInitDisplayMode (GLUT_DOUBLE | GLUT_DEPTH); //set the display to Double buffer, with depth
-    glutGameModeString( "1920x1080:32@60" ); //the settings  for fullscreen mode
-    glutEnterGameMode(); //set glut to fullscreen using the settings in the line above
-    init (); //call the init function
-    glutDisplayFunc (display); //use the display function to draw everything
-    glutIdleFunc (display); //update any variables in display,display can be changed to anyhing, as long as you move the variables to be updated, in this case, angle++;
-    glutReshapeFunc (reshape); //reshape the window accordingly
-    glutMouseFunc(mouse);
-    glutKeyboardFunc (keyboard); //check the keyboard
-    glutMainLoop (); //call the main loop
+	glutInit (&argc, argv);
+	glutInitDisplayMode (GLUT_DOUBLE | GLUT_DEPTH); //set the display to Double buffer, with depth
+	glutGameModeString( "1920x1080:32@60" ); //the settings  for fullscreen mode
+	glutEnterGameMode(); //set glut to fullscreen using the settings in the line above
+	init (); //call the init function
+	glutDisplayFunc (display); //use the display function to draw everything
+	glutIdleFunc (display); //update any variables in display,display can be changed to anyhing, as long as you move the variables to be updated, in this case, angle++;
+	glutReshapeFunc (reshape); //reshape the window accordingly
+	glutMouseFunc(mouse);
+	glutKeyboardFunc (keyboard); //check the keyboard
+	glutMainLoop (); //call the main loop
 
-		
-    return 0;
+
+	return 0;
 }
