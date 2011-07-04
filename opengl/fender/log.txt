@@ -1,6 +1,0 @@
-[GENERAL] Log initialized.
-[GENERAL] Renderer initalized.
-[GENERAL] Log initialized.
-[GENERAL] Renderer initalized.
-[GENERAL] Log initialized.
-[GENERAL] Renderer initalized.
