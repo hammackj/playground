@@ -13,3 +13,4 @@ fender: $(CODE_FILES)
 clean:
 	rm -rf *.dSYM
 	rm $(OUTPUT_BINARY)
+	rm log.txt

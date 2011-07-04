@@ -60,7 +60,7 @@ void renderer_draw_renderer_status(void)
 {
 	char fps_status[25];
 	
-	sprintf(fps_status, "FPS:%4.2f", renderer_get_fps());
+	sprintf(fps_status, "FPS: %4.2f", renderer_get_fps());
 	
 	glMatrixMode(GL_PROJECTION);
 	glPushMatrix();
