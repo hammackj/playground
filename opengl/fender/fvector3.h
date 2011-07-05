@@ -10,8 +10,6 @@ typedef struct
 	float z;
 } vector3_t;
 
-vector3_t zero_vector = { 0.0f, 0.0f, 0.0f };
-
 float vector3_length(vector3_t *v);
 void vector3_normalize(vector3_t *v);
 

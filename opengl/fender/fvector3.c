@@ -1,5 +1,7 @@
 #include "fvector3.h"
 
+vector3_t zero_vector = { 0.0f, 0.0f, 0.0f };
+
 /**
  *
  */
