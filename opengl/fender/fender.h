@@ -19,6 +19,8 @@
 #include "finput.h"
 #include "fcamera.h"
 
+extern vector3_t zero_vector;
+
 void fender_init(void);
 void fender_shutdown(void);
 

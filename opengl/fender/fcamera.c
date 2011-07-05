@@ -1,5 +1,7 @@
 #include "fcamera.h"
 
+static void camera_update_view_matrix(void);
+
 camera_t camera_init(void)
 {
 	camera_t camera;
@@ -16,4 +18,18 @@ camera_t camera_init(void)
 	camera.eye.z = 0.0f;		
 	
 	return camera;
+}
+
+void camera_move(camera_t *camera, vector3_t *direction, vector3_t *amount)
+{
+	camera->eye.x += direction->x * amount->x;
+	camera->eye.y += direction->y * amount->y;
+	camera->eye.z += direction->z * amount->z;
+	
+	camera_update_view_matrix();
+}
+
+void camera_update_view_matrix()
+{
+	
 }

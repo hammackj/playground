@@ -3,7 +3,7 @@
 
 #include "fender.h"
 
-typedef struct camera_t
+typedef struct
 {
 	vector3_t position;
 	vector3_t rotation;
@@ -17,7 +17,7 @@ camera_t camera_init(void);
 void camera_update(camera_t *camera);
 
 //Movement, negative values for backwards/down
-void camera_move(vector3_t *direction, vector3_t *amount);
+void camera_move(camera_t *camera, vector3_t *direction, vector3_t *amount);
 
 //void camera_move_forward(float speed);
 //void camera_strafe(float speed);
