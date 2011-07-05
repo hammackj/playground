@@ -1,17 +1,7 @@
 #ifndef FENDER_H
 #define FENDER_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdarg.h>
-#include <string.h>
-#include <math.h>
-#include <time.h>
-
-#include <GLUT/glut.h>
-#include <OpenGL/glext.h>
-#include <OpenGL/gl.h>
-#include <OpenGL/glu.h>
+#include "common.h"
 
 #include "fmath.h"
 #include "fvector3.h"

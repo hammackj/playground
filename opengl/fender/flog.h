@@ -1,7 +1,7 @@
 #ifndef FLOG_H
 #define FLOG_H
 
-#include "fender.h"
+#include "common.h"
 
 typedef enum 
 {

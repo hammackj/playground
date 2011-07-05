@@ -1,8 +1,7 @@
 #ifndef FVECTOR3_H
 #define FVECTOR3_H
 
-//#include <math.h>
-#include "fender.h"
+#include "common.h"
 
 typedef struct
 {
