@@ -7,7 +7,4 @@
 #define TWO_PI PI * 2.0f
 #define EPSILON 1e-6f
 
-#include "fvector3.h"
-#include "fquartnion.h"
-
 #endif

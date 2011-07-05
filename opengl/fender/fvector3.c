@@ -6,8 +6,8 @@ vector3_t zero_vector = { 0.0f, 0.0f, 0.0f };
  *
  */
 float vector3_length(vector3_t *v)
-{	
-	 return (sqrt((v->x * v->x) + (v->y * v->y) + (v->z * v->z)));	
+{
+	return (sqrt((v->x * v->x) + (v->y * v->y) + (v->z * v->z)));
 }
 
 /**
@@ -16,7 +16,7 @@ float vector3_length(vector3_t *v)
 void vector3_normalize(vector3_t *v)
 {
 	float len = vector3_length(v);
-	
+
 	v->x /= len;
 	v->y /= len;
 	v->z /= len;
@@ -71,7 +71,7 @@ void vector3_add(vector3_t *v1, vector3_t *v2, vector3_t *result)
 {
 	result->x = v1->x + v2->x;
 	result->y = v1->y + v2->y;
-	result->z = v1->z + v2->z;		
+	result->z = v1->z + v2->z;
 }
 
 /**
@@ -81,7 +81,7 @@ void vector3_subtract(vector3_t *v1, vector3_t *v2, vector3_t *result)
 {
 	result->x = v1->x - v2->x;
 	result->y = v1->y - v2->y;
-	result->z = v1->z - v2->z;	
+	result->z = v1->z - v2->z;
 }
 
 /**
@@ -91,7 +91,7 @@ void vector3_multiply_scalar(vector3_t *v, float scalar, vector3_t *result)
 {
 	result->x = v->x * scalar;
 	result->y = v->y * scalar;
-	result->z = v->z * scalar;		
+	result->z = v->z * scalar;
 }
 
 /**

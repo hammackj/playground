@@ -1,7 +1,8 @@
 #ifndef FVECTOR3_H
 #define FVECTOR3_H
 
-#include <math.h>
+//#include <math.h>
+#include "fender.h"
 
 typedef struct
 {
@@ -31,6 +32,5 @@ int vector3_equal(vector3_t *v1, vector3_t *v2);
 int vector3_not_equal(vector3_t *v1, vector3_t *v2);
 
 void vector3_zero(vector3_t *v);
-
 
 #endif

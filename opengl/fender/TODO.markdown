@@ -1,8 +1,8 @@
 #Todo
 
-- implement vectors
+- [X] implement vectors 
 - implement matrix4
 - implement matrix3
-- implement quateroin
+- implement quartnoin
 - implement camera
 - implement png loader

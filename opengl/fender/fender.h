@@ -14,6 +14,8 @@
 #include <OpenGL/glu.h>
 
 #include "fmath.h"
+#include "fvector3.h"
+#include "fquartnion.h"
 #include "flog.h"
 #include "frenderer.h"
 #include "finput.h"
