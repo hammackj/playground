@@ -129,3 +129,10 @@ void vector3_zero(vector3_t *v)
 	v->y = 0.0f;
 	v->z = 0.0f;
 }
+
+void vector3_set(vector3_t *v, float x, float y, float z)
+{
+	v->x = x;
+	v->y = y;
+	v->z = z;
+}

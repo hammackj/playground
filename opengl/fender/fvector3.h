@@ -32,4 +32,6 @@ int vector3_not_equal(vector3_t *v1, vector3_t *v2);
 
 void vector3_zero(vector3_t *v);
 
+void vector3_set(vector3_t *v, float x, float y, float z);
+
 #endif

@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-g -Wall
 LDFLAGS=-framework OpenGL -framework Glut
-CODE_FILES=main.c flog.c fvector3.c frenderer.c finput.c fender.c fcamera.c
+CODE_FILES=main.c flog.c fmath.c fvector3.c fmatrix4.c frenderer.c finput.c fender.c fcamera.c
 OUTPUT_BINARY=fender_test
 
 all: fender
