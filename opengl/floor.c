@@ -100,7 +100,7 @@ void init (void)
 {
     glEnable (GL_DEPTH_TEST); //enable the depth testing
 //		glEnable(GL_CULL_FACE);
-//		glCullFace(GL_BACK); 
+		glCullFace(GL_BACK); 
     //glEnable (GL_LIGHTING); //enable the lighting
     //glEnable (GL_LIGHT0); //enable LIGHT0, our Diffuse Light
     glShadeModel (GL_SMOOTH); //set the shader to smooth shader

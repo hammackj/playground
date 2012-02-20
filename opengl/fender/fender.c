@@ -6,7 +6,7 @@ void fender_init(void)
 	log_write(GENERAL, "Log initialized.\n");
 	
 	renderer_init();
-	log_write(GENERAL, "Renderer initalized.\n");
+	log_write(GENERAL, "Renderer initialized.\n");
 	
 }
 

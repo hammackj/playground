@@ -215,7 +215,11 @@ void matrix4_to_axes(matrix4_t *m, vector3_t *x, vector3_t *y, vector3_t *z)
 	z->x = m->matrix[2][0], z->y = m->matrix[2][1], z->z = m->matrix[2][2];
 }
 
-void matrix4_to_axes_transposed(matrix4_t *m, vector3_t *x, vector3_t *y, vector3_t *z);
+void matrix4_to_axes_transposed(matrix4_t *m, vector3_t *x, vector3_t *y, vector3_t *z)
+{
+	
+}
+
 void matrix4_to_head_pitch_roll(matrix4_t *m, float head_degrees, float pitch_degrees, float roll_degrees)
 {
 	
@@ -243,7 +247,7 @@ void matrix4_inverse(matrix4_t *m, matrix4_t *dst)
 	{
 		d = 1.0f / d;
 		
-		dst->matrix[0][0]
+		dst->matrix[0][0];
 	}
 	
 }
