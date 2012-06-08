@@ -38,6 +38,8 @@ fps_test1: fps_test1.c
 camera2: camera2.c
 	$(CC) $(CFLAGS) -o camera2 camera2.c $(LDFLAGS)
 
+
+
 clean:
 	rm -rf *.dSYM
 	rm fullscreen
@@ -50,4 +52,5 @@ clean:
 	rm keyboard
 	rm world
 	rm fps_test1
+
 

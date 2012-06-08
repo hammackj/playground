@@ -42,7 +42,8 @@ void cube (void) {
 		}
 }
 
-void init (void) {
+void init (void) 
+{
 		cubepositions();
 }
 
@@ -65,7 +66,8 @@ void display (void) {
 
 		glTranslatef(0.0f, 0.0f, -cRadius);
 		glRotatef(xrot,1.0,0.0,0.0);
-		glColor3f(1.0f, 0.0f, 0.0f);
+		
+		glColor3f(1.0f, 0.0f, 0.0f); //Red
 		glutSolidCube(2); //Our character to follow
 
 		glRotatef(yrot,0.0,1.0,0.0);	//rotate our camera on the y-axis (up and down)
@@ -77,7 +79,8 @@ void display (void) {
 		angle++; //increase the angle
 }
 
-void reshape (int w, int h) {
+void reshape (int w, int h) 
+{
 		glViewport (0, 0, (GLsizei)w, (GLsizei)h); //set the viewport to the current window specifications
 		glMatrixMode (GL_PROJECTION); //set the matrix to projection
 
@@ -87,27 +90,28 @@ void reshape (int w, int h) {
 
 }
 
-void keyboard (unsigned char key, int x, int y) {
+void keyboard (unsigned char key, int x, int y) 
+{
 		if (key=='q')
 		{
-		xrot += 1;
-		if (xrot >360) xrot -= 360;
+			xrot += 1;
+			if (xrot >360) xrot -= 360;
 		}
 
 		if (key=='z')
 		{
-		xrot -= 1;
-		if (xrot < -360) xrot += 360;
+			xrot -= 1;
+			if (xrot < -360) xrot += 360;
 		}
 
 		if (key=='w')
 		{
-		float xrotrad, yrotrad;
-		yrotrad = (yrot / 180 * 3.141592654f);
-		xrotrad = (xrot / 180 * 3.141592654f);
-		xpos += (float)sin(yrotrad);
-		zpos -= (float)cos(yrotrad);
-		ypos -= (float)sin(xrotrad);
+			float xrotrad, yrotrad;
+			yrotrad = (yrot / 180 * 3.141592654f);
+			xrotrad = (xrot / 180 * 3.141592654f);
+			xpos += (float)sin(yrotrad);
+			zpos -= (float)cos(yrotrad);
+			ypos -= (float)sin(xrotrad);
 		}
 
 		if (key=='s')
@@ -154,9 +158,9 @@ void mouseMovement(int x, int y) {
 int main (int argc, char **argv) {
 		glutInit (&argc, argv);
 		glutInitDisplayMode (GLUT_DOUBLE | GLUT_DEPTH);
-		glutInitWindowSize (500, 500);
-		glutInitWindowPosition (100, 100);
-		glutCreateWindow ("A basic OpenGL Window");
+		glutGameModeString( "1920x1080:32@60" ); //the settings	 for fullscreen mode
+		glutEnterGameMode(); //set glut to fullscreen using the settings in the line above
+		
 		init ();
 		glutDisplayFunc (display);
 		glutIdleFunc (display);

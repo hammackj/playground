@@ -1,37 +1,9 @@
 #include "fmatrix4.h"
 
-float matrix4_determinant(matrix4_t *m)
-{
-  return (m->matrix[0][0] * m->matrix[1][1] - m->matrix[1][0] * m->matrix[0][1])
-      * (m->matrix[2][2] * m->matrix[3][3] - m->matrix[3][2] * m->matrix[2][3])
-      - (m->matrix[0][0] * m->matrix[2][1] - m->matrix[2][0] * m->matrix[0][1])
-      * (m->matrix[1][2] * m->matrix[3][3] - m->matrix[3][2] * m->matrix[1][3])
-      + (m->matrix[0][0] * m->matrix[3][1] - m->matrix[3][0] * m->matrix[0][1])
-      * (m->matrix[1][2] * m->matrix[2][3] - m->matrix[2][2] * m->matrix[1][3])
-      + (m->matrix[1][0] * m->matrix[2][1] - m->matrix[2][0] * m->matrix[1][1])
-      * (m->matrix[0][2] * m->matrix[3][3] - m->matrix[3][2] * m->matrix[0][3])
-      - (m->matrix[1][0] * m->matrix[3][1] - m->matrix[3][0] * m->matrix[1][1])
-      * (m->matrix[0][2] * m->matrix[2][3] - m->matrix[2][2] * m->matrix[0][3])
-      + (m->matrix[2][0] * m->matrix[3][1] - m->matrix[3][0] * m->matrix[2][1])
-      * (m->matrix[0][2] * m->matrix[1][3] - m->matrix[1][2] * m->matrix[0][3]);
-}
-
-void matrix4_from_axes(matrix4_t *m, vector3_t *x, vector3_t *y, vector3_t *z)
-{
-	m->matrix[0][0] = x->x, m->matrix[0][1] = x->y, m->matrix[0][2] = x->z, m->matrix[0][3] = 0.0f;
-	m->matrix[1][0] = y->x, m->matrix[1][1] = y->y, m->matrix[1][2] = y->z, m->matrix[1][3] = 0.0f;
-	m->matrix[2][0] = z->x, m->matrix[2][1] = z->y, m->matrix[2][2] = z->z, m->matrix[2][3] = 0.0f;
-	m->matrix[3][0] = 0.0f, m->matrix[3][1] = 0.0f, m->matrix[3][2] = 0.0f, m->matrix[3][3] = 1.0f;
-}
-
-void matrix4_from_axes_transposed(matrix4_t *m, vector3_t *x, vector3_t *y, vector3_t *z)
-{
-	m->matrix[0][0] = x->x, m->matrix[0][1] = y->y, m->matrix[0][2] = z->z, m->matrix[0][3] = 0.0f; 
-	m->matrix[1][0] = x->x, m->matrix[1][1] = y->y, m->matrix[1][2] = z->z, m->matrix[1][3] = 0.0f; 
-	m->matrix[2][0] = x->x, m->matrix[2][1] = y->y, m->matrix[2][2] = z->z, m->matrix[2][3] = 0.0f; 
-	m->matrix[3][0] = 0.0f, m->matrix[3][1] = 0.0f, m->matrix[3][2] = 0.0f, m->matrix[3][3] = 1.0f;	
-}
-
+/**
+ *
+ *
+ */
 void matrix4_from_head_pitch_roll(matrix4_t *m, float head_degrees, float pitch_degrees, float roll_degrees)
 {
 	float cosH = 0.0f, cosP = 0.0f, cosR = 0.0f;
@@ -68,6 +40,247 @@ void matrix4_from_head_pitch_roll(matrix4_t *m, float head_degrees, float pitch_
 	m->matrix[3][1] = 0.0f;
 	m->matrix[3][2] = 0.0f;
 	m->matrix[3][3] = 0.0f;
+}
+
+/**
+ *
+ *
+ */
+void matrix4_to_head_pitch_roll(matrix4_t *m, float *head_degrees, float *pitch_degrees, float *roll_degrees)
+{
+	float thetaX = asinf(m->matrix[1][2]);
+	float thetaY = 0.0f;
+	float thetaZ = 0.0f;
+	
+	if (thetaX < HALF_PI)
+	{
+		if (thetaX > -HALF_PI)
+		{
+			thetaZ = atan2f(-m->matrix[1][0], m->matrix[1][1]);
+			thetaY = atan2f(-m->matrix[0][2], m->matrix[2][2]);
+		}
+		else
+		{
+			thetaZ = -atan2f(m->matrix[2][0], m->matrix[0][0]);
+			thetaY = 0.0f;
+		}
+	}
+	else
+	{
+		thetaZ = atan2f(m->matrix[2][0], m->matrix[0][0]);
+		thetaY = 0.0f;
+	}
+	
+	*head_degrees = RADIANS_TO_DEGREES(thetaY);
+	*pitch_degrees = RADIANS_TO_DEGREES(thetaX);
+	*roll_degrees = RADIANS_TO_DEGREES(thetaZ);
+}
+
+/**
+ *
+ *
+ */
+void matrix4_rotate(matrix4_t *m, vector3_t *axis, float degrees)
+{
+	float x = 0.0f, y = 0.0f, z = 0.0f;
+	float c = 0.0f, s = 0.0f;
+	
+	degrees = DEGREES_TO_RADIANS(degrees);
+	
+	x = axis->x;
+	y = axis->y;
+	z = axis->z;
+	c = cosf(degrees);
+	z = sinf(degrees);
+	
+	m->matrix[0][0] = (x * x) * (1.0f - c) + c;
+	m->matrix[0][1] = (x * y) * (1.0f - c) + (z * s);
+	m->matrix[0][2] = (x * z) * (1.0f - c) - (y * s);
+	m->matrix[0][3] = 0.0f;
+	
+	m->matrix[1][0] = (y * x) * (1.0f - c) - (z * s);
+	m->matrix[1][1] = (y * y) * (1.0f - c) + c;
+	m->matrix[1][2] = (y * z) * (1.0f - c) + (x * s);
+	m->matrix[1][3] = 0.0f;
+	
+	m->matrix[2][0] = (z * x) * (1.0f - c) + (y * s);
+	m->matrix[2][1] = (z * y) * (1.0f - c) - (x * s);
+	m->matrix[2][2] = (z * z) * (1.0f - c) + c;
+	m->matrix[2][3] = 0.0f;
+	
+	m->matrix[3][0] = 0.0f;
+	m->matrix[3][1] = 0.0f;
+	m->matrix[3][2] = 0.0f;
+	m->matrix[3][3] = 1.0f;
+}
+
+/**
+ *
+ *
+ */
+void matrix4_identity(matrix4_t *m)
+{
+	m->matrix[0][0] = 1.0f, m->matrix[0][1] = 0.0f, m->matrix[0][2] = 0.0f, m->matrix[0][3] = 0.0f;
+	m->matrix[1][0] = 0.0f, m->matrix[1][1] = 1.0f, m->matrix[1][2] = 0.0f, m->matrix[1][3] = 0.0f;
+	m->matrix[2][0] = 0.0f, m->matrix[2][1] = 0.0f, m->matrix[2][2] = 1.0f, m->matrix[2][3] = 0.0f;
+	m->matrix[3][0] = 0.0f, m->matrix[3][1] = 0.0f, m->matrix[3][2] = 0.0f, m->matrix[3][3] = 1.0f;				
+}
+
+/**
+ * Adds m2 to m1
+ *
+ */
+void matrix4_add(matrix4_t *m1, matrix4_t *m2)
+{
+	m1->matrix[0][0] += m2->matrix[0][0];
+	m1->matrix[0][1] += m2->matrix[0][1];
+	m1->matrix[0][2] += m2->matrix[0][2];
+	m1->matrix[0][3] += m2->matrix[0][3]; 
+	
+	m1->matrix[1][0] += m2->matrix[1][0];
+	m1->matrix[1][1] += m2->matrix[1][1];
+	m1->matrix[1][2] += m2->matrix[1][2];
+	m1->matrix[1][3] += m2->matrix[1][3];
+	
+	m1->matrix[2][0] += m2->matrix[2][0];
+	m1->matrix[2][1] += m2->matrix[2][1];
+	m1->matrix[2][2] += m2->matrix[2][2];
+	m1->matrix[2][3] += m2->matrix[2][3];
+	
+	m1->matrix[3][0] += m2->matrix[3][0];
+	m1->matrix[3][1] += m2->matrix[3][1];
+	m1->matrix[3][2] += m2->matrix[3][2];
+	m1->matrix[3][3] += m2->matrix[3][3];
+}
+
+/**
+ *
+ *
+ */
+void matrix4_subtract(matrix4_t *m1, matrix4_t *m2)
+{
+	m1->matrix[0][0] -= m2->matrix[0][0];
+	m1->matrix[0][1] -= m2->matrix[0][1];
+	m1->matrix[0][2] -= m2->matrix[0][2];
+	m1->matrix[0][3] -= m2->matrix[0][3]; 
+	
+	m1->matrix[1][0] -= m2->matrix[1][0];
+	m1->matrix[1][1] -= m2->matrix[1][1];
+	m1->matrix[1][2] -= m2->matrix[1][2];
+	m1->matrix[1][3] -= m2->matrix[1][3];
+	
+	m1->matrix[2][0] -= m2->matrix[2][0];
+	m1->matrix[2][1] -= m2->matrix[2][1];
+	m1->matrix[2][2] -= m2->matrix[2][2];
+	m1->matrix[2][3] -= m2->matrix[2][3];
+	
+	m1->matrix[3][0] -= m2->matrix[3][0];
+	m1->matrix[3][1] -= m2->matrix[3][1];
+	m1->matrix[3][2] -= m2->matrix[3][2];
+	m1->matrix[3][3] -= m2->matrix[3][3];	
+}
+
+/**
+ *
+ *
+ */
+void matrix4_multiply(matrix4_t *m1, matrix4_t *m2, matrix4_t *m3)
+{
+	m3->matrix[0][0] = (m1->matrix[0][0] * m2->matrix[0][0]) + (m1->matrix[0][1] * m2->matrix[1][0]) + (m1->matrix[0][2] * m2->matrix[2][0]) + (m1->matrix[0][3] * m2->matrix[3][0]);
+	m3->matrix[0][1] = (m1->matrix[0][0] * m2->matrix[0][1]) + (m1->matrix[0][1] * m2->matrix[1][1]) + (m1->matrix[0][2] * m2->matrix[2][1]) + (m1->matrix[0][3] * m2->matrix[3][1]);
+	m3->matrix[0][2] = (m1->matrix[0][0] * m2->matrix[0][2]) + (m1->matrix[0][1] * m2->matrix[1][2]) + (m1->matrix[0][2] * m2->matrix[2][2]) + (m1->matrix[0][3] * m2->matrix[3][2]);
+	m3->matrix[0][3] = (m1->matrix[0][0] * m2->matrix[0][3]) + (m1->matrix[0][1] * m2->matrix[1][3]) + (m1->matrix[0][2] * m2->matrix[2][3]) + (m1->matrix[0][3] * m2->matrix[3][3]);
+	
+	m3->matrix[1][0] = (m1->matrix[1][0] * m2->matrix[1][0]) + (m1->matrix[1][1] * m2->matrix[1][0]) + (m1->matrix[1][2] * m2->matrix[2][0]) + (m1->matrix[1][3] * m2->matrix[3][0]);
+	m3->matrix[1][1] = (m1->matrix[1][0] * m2->matrix[1][1]) + (m1->matrix[1][1] * m2->matrix[1][1]) + (m1->matrix[1][2] * m2->matrix[2][1]) + (m1->matrix[1][3] * m2->matrix[3][1]);
+	m3->matrix[1][2] = (m1->matrix[1][0] * m2->matrix[1][2]) + (m1->matrix[1][1] * m2->matrix[1][2]) + (m1->matrix[1][2] * m2->matrix[2][2]) + (m1->matrix[1][3] * m2->matrix[3][2]);
+	m3->matrix[1][3] = (m1->matrix[1][0] * m2->matrix[1][3]) + (m1->matrix[1][1] * m2->matrix[1][3]) + (m1->matrix[1][2] * m2->matrix[2][3]) + (m1->matrix[1][3] * m2->matrix[3][3]);
+	
+	m3->matrix[2][0] = (m1->matrix[2][0] * m2->matrix[2][0]) + (m1->matrix[2][1] * m2->matrix[1][0]) + (m1->matrix[2][2] * m2->matrix[2][0]) + (m1->matrix[2][3] * m2->matrix[3][0]);
+	m3->matrix[2][1] = (m1->matrix[2][0] * m2->matrix[2][1]) + (m1->matrix[2][1] * m2->matrix[1][1]) + (m1->matrix[2][2] * m2->matrix[2][1]) + (m1->matrix[2][3] * m2->matrix[3][1]);
+	m3->matrix[2][2] = (m1->matrix[2][0] * m2->matrix[2][2]) + (m1->matrix[2][1] * m2->matrix[1][2]) + (m1->matrix[2][2] * m2->matrix[2][2]) + (m1->matrix[2][3] * m2->matrix[3][2]);
+	m3->matrix[2][3] = (m1->matrix[2][0] * m2->matrix[2][3]) + (m1->matrix[2][1] * m2->matrix[1][3]) + (m1->matrix[2][2] * m2->matrix[2][3]) + (m1->matrix[2][3] * m2->matrix[3][3]);
+	
+	m3->matrix[3][0] = (m1->matrix[3][0] * m2->matrix[3][0]) + (m1->matrix[3][1] * m2->matrix[1][0]) + (m1->matrix[3][2] * m2->matrix[2][0]) + (m1->matrix[3][3] * m2->matrix[3][0]);
+	m3->matrix[3][1] = (m1->matrix[3][0] * m2->matrix[3][1]) + (m1->matrix[3][1] * m2->matrix[1][1]) + (m1->matrix[3][2] * m2->matrix[2][1]) + (m1->matrix[3][3] * m2->matrix[3][1]);
+	m3->matrix[3][2] = (m1->matrix[3][0] * m2->matrix[3][2]) + (m1->matrix[3][1] * m2->matrix[1][2]) + (m1->matrix[3][2] * m2->matrix[2][2]) + (m1->matrix[3][3] * m2->matrix[3][2]);
+	m3->matrix[3][3] = (m1->matrix[3][0] * m2->matrix[3][3]) + (m1->matrix[3][1] * m2->matrix[1][3]) + (m1->matrix[3][2] * m2->matrix[2][3]) + (m1->matrix[3][3] * m2->matrix[3][3]);
+}
+
+/**
+ *
+ *
+ */
+void matrix4_divide(matrix4_t *m1, matrix4_t *m2)
+{
+	//TODO
+}
+
+/**
+ *
+ *
+ */
+bool matrix4_equal(matrix4_t *m1, matrix4_t *m2)
+{
+	return math_close_enough(m1->matrix[0][0], m2->matrix[0][0]) &&
+		math_close_enough(m1->matrix[0][1], m2->matrix[0][1]) &&
+		math_close_enough(m1->matrix[0][2], m2->matrix[0][2]) &&
+		math_close_enough(m1->matrix[0][3], m2->matrix[0][3]) &&
+		math_close_enough(m1->matrix[1][0], m2->matrix[1][0]) &&
+		math_close_enough(m1->matrix[1][1], m2->matrix[1][1]) &&
+		math_close_enough(m1->matrix[1][2], m2->matrix[1][2]) &&
+		math_close_enough(m1->matrix[1][3], m2->matrix[1][3]) &&		
+		math_close_enough(m1->matrix[2][0], m2->matrix[2][0]) &&
+		math_close_enough(m1->matrix[2][1], m2->matrix[2][1]) &&
+		math_close_enough(m1->matrix[2][2], m2->matrix[2][2]) &&
+		math_close_enough(m1->matrix[2][3], m2->matrix[2][3]) &&
+		math_close_enough(m1->matrix[3][0], m2->matrix[3][0]) &&
+		math_close_enough(m1->matrix[3][1], m2->matrix[3][1]) &&
+		math_close_enough(m1->matrix[3][2], m2->matrix[3][2]) &&
+		math_close_enough(m1->matrix[3][3], m2->matrix[3][3]);
+}
+
+/**
+ *
+ *
+ */
+bool matrix4_not_equal(matrix4_t *m1, matrix4_t *m2)
+{
+	return !matrix4_equal(m1, m2);
+}
+
+
+
+/*float matrix4_determinant(matrix4_t *m)
+{
+  return (m->matrix[0][0] * m->matrix[1][1] - m->matrix[1][0] * m->matrix[0][1])
+      * (m->matrix[2][2] * m->matrix[3][3] - m->matrix[3][2] * m->matrix[2][3])
+      - (m->matrix[0][0] * m->matrix[2][1] - m->matrix[2][0] * m->matrix[0][1])
+      * (m->matrix[1][2] * m->matrix[3][3] - m->matrix[3][2] * m->matrix[1][3])
+      + (m->matrix[0][0] * m->matrix[3][1] - m->matrix[3][0] * m->matrix[0][1])
+      * (m->matrix[1][2] * m->matrix[2][3] - m->matrix[2][2] * m->matrix[1][3])
+      + (m->matrix[1][0] * m->matrix[2][1] - m->matrix[2][0] * m->matrix[1][1])
+      * (m->matrix[0][2] * m->matrix[3][3] - m->matrix[3][2] * m->matrix[0][3])
+      - (m->matrix[1][0] * m->matrix[3][1] - m->matrix[3][0] * m->matrix[1][1])
+      * (m->matrix[0][2] * m->matrix[2][3] - m->matrix[2][2] * m->matrix[0][3])
+      + (m->matrix[2][0] * m->matrix[3][1] - m->matrix[3][0] * m->matrix[2][1])
+      * (m->matrix[0][2] * m->matrix[1][3] - m->matrix[1][2] * m->matrix[0][3]);
+}*/
+
+/*void matrix4_from_axes(matrix4_t *m, vector3_t *x, vector3_t *y, vector3_t *z)
+{
+	m->matrix[0][0] = x->x, m->matrix[0][1] = x->y, m->matrix[0][2] = x->z, m->matrix[0][3] = 0.0f;
+	m->matrix[1][0] = y->x, m->matrix[1][1] = y->y, m->matrix[1][2] = y->z, m->matrix[1][3] = 0.0f;
+	m->matrix[2][0] = z->x, m->matrix[2][1] = z->y, m->matrix[2][2] = z->z, m->matrix[2][3] = 0.0f;
+	m->matrix[3][0] = 0.0f, m->matrix[3][1] = 0.0f, m->matrix[3][2] = 0.0f, m->matrix[3][3] = 1.0f;
+}
+
+void matrix4_from_axes_transposed(matrix4_t *m, vector3_t *x, vector3_t *y, vector3_t *z)
+{
+	m->matrix[0][0] = x->x, m->matrix[0][1] = y->y, m->matrix[0][2] = z->z, m->matrix[0][3] = 0.0f; 
+	m->matrix[1][0] = x->x, m->matrix[1][1] = y->y, m->matrix[1][2] = z->z, m->matrix[1][3] = 0.0f; 
+	m->matrix[2][0] = x->x, m->matrix[2][1] = y->y, m->matrix[2][2] = z->z, m->matrix[2][3] = 0.0f; 
+	m->matrix[3][0] = 0.0f, m->matrix[3][1] = 0.0f, m->matrix[3][2] = 0.0f, m->matrix[3][3] = 1.0f;	
 }
 
 void matrix4_orient(matrix4_t *m, vector3_t *from, vector3_t *to)
@@ -150,41 +363,6 @@ void matrix4_orient(matrix4_t *m, vector3_t *from, vector3_t *to)
 	}
 }
 
-void matrix4_rotate(matrix4_t *m, vector3_t *axis, float degrees)
-{
-	float x = 0.0f, y = 0.0f, z = 0.0f;
-	float c = 0.0f, s = 0.0f;
-	
-	degrees = DEGREES_TO_RADIANS(degrees);
-	
-	x = axis->x;
-	y = axis->y;
-	z = axis->z;
-	c = cosf(degrees);
-	z = sinf(degrees);
-	
-	m->matrix[0][0] = (x * x) * (1.0f - c) + c;
-	m->matrix[0][1] = (x * y) * (1.0f - c) + (z * s);
-	m->matrix[0][2] = (x * z) * (1.0f - c) - (y * s);
-	m->matrix[0][3] = 0.0f;
-	
-	m->matrix[1][0] = (y * x) * (1.0f - c) - (z * s);
-	m->matrix[1][1] = (y * y) * (1.0f - c) + c;
-	m->matrix[1][2] = (y * z) * (1.0f - c) + (x * s);
-	m->matrix[1][3] = 0.0f;
-	
-	m->matrix[2][0] = (z * x) * (1.0f - c) + (y * s);
-	m->matrix[2][1] = (z * y) * (1.0f - c) - (x * s);
-	m->matrix[2][2] = (z * z) * (1.0f - c) + c;
-	m->matrix[2][3] = 0.0f;
-	
-	m->matrix[3][0] = 0.0f;
-	m->matrix[3][1] = 0.0f;
-	m->matrix[3][2] = 0.0f;
-	m->matrix[3][3] = 1.0f;
-	
-}
-
 void matrix4_scale(matrix4_t *m, float sx, float sy, float sz)
 {
 	m->matrix[0][0] = sx;
@@ -220,18 +398,9 @@ void matrix4_to_axes_transposed(matrix4_t *m, vector3_t *x, vector3_t *y, vector
 	
 }
 
-void matrix4_to_head_pitch_roll(matrix4_t *m, float head_degrees, float pitch_degrees, float roll_degrees)
-{
-	
-}
 
-void matrix4_identity(matrix4_t *m)
-{
-	m->matrix[0][0] = 1.0f, m->matrix[0][1] = 0.0f, m->matrix[0][2] = 0.0f, m->matrix[0][3] = 0.0f;
-	m->matrix[1][0] = 0.0f, m->matrix[1][1] = 1.0f, m->matrix[1][2] = 0.0f, m->matrix[1][3] = 0.0f;
-	m->matrix[2][0] = 0.0f, m->matrix[2][1] = 0.0f, m->matrix[2][2] = 1.0f, m->matrix[2][3] = 0.0f;
-	m->matrix[3][0] = 0.0f, m->matrix[3][1] = 0.0f, m->matrix[3][2] = 0.0f, m->matrix[3][3] = 1.0f;				
-}
+
+
 
 void matrix4_inverse(matrix4_t *m, matrix4_t *dst)
 {
@@ -275,3 +444,4 @@ void matrix4_transpose(matrix4_t *m, matrix4_t *result)
 	result->matrix[3][3] = m->matrix[3][3];
 }
 void matrix4_translate(matrix4_t *m);
+*/

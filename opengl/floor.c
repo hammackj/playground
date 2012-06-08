@@ -12,6 +12,8 @@
 #define MAP_MAX_Y 50
 
 
+float cRadius = 10.0f; // our radius distance from our character
+
 int map[MAP_MAX_X][MAP_MAX_Y];
 
 int frame=0;
@@ -20,6 +22,8 @@ long timez, timebase=0;
 char s[50];
 
 int g_h, g_w = 0;
+
+float lastx, lasty;
 
 //angle of rotation
 GLfloat xpos = 0, ypos = 0, zpos = 0, xrot = 0, yrot = 90, angle=0.0;
@@ -147,9 +151,24 @@ void display (void)
     //camera position, x,y,z, looking at x,y,z, Up Positions of the camera
     camera();
 		fps();
+		
+		
+		
+		//Build character to follow?
+		
+		glLoadIdentity();
+		glTranslatef(0.0f, 0.0f, -cRadius);
+		glRotatef(xrot,1.0,0.0,0.0);
+		glColor3f(1.0f, 0.0f, 0.0f); //Red
+		glutSolidCube(2); //Our character to follow
+		glRotatef(yrot,0.0,1.0,0.0);	//rotate our camera on the y-axis (up and down)
+		glTranslated(-xpos,0.0f,-zpos); //translate the screen to the position of our camera
+		glColor3f(1.0f, 1.0f, 1.0f);
+		
+		
 
 		/* A step backward, then spin the cube */
-		glTranslatef(0, 0, -5.0f);
+		//glTranslatef(0, 0, -5.0f);
 		//glRotatef(30, 1, 0, 0);
 	//	glRotatef(alpha, 0, 1, 0);
 
@@ -207,78 +226,71 @@ void mouse (int button, int state, int x, int y)
 		}break;
   }
 }
+void mouseMovement(int x, int y) 
+{
+		int diffx=x-lastx; //check the difference between the current x and the last x position
+		int diffy=y-lasty; //check the difference between thecurrent y and the last y position
+		lastx=x; //set lastx to the current x position
+		lasty=y; //set lasty to the current y position
+		xrot += (float) diffy; //set the xrot to xrot with the addition of the difference in the y position
+		yrot += (float) diffx;		//set the xrot to yrot with the addition of the difference in the x position
+}
 
 void keyboard (unsigned char key, int x, int y) 
 {
-    if (key=='q')
-    {
-        xrot += 1;
-        if (xrot >360) xrot -= 360;
-    }
-    
-    if (key=='z')
-    {
-        xrot -= 1;
-        if (xrot < -360) xrot += 360;
-    }
-    
-    if (key=='w')
-    {
-        float xrotrad, yrotrad;
-        yrotrad = (yrot / 180 * 3.141592654f);
-        xrotrad = (xrot / 180 * 3.141592654f); 
-        xpos += (float)sin(yrotrad) ;
-        zpos -= (float)cos(yrotrad) ;
-        ypos -= (float)sin(xrotrad) ;
-    }
-    
-    if (key=='s')
-    {
-        float xrotrad, yrotrad;
-        yrotrad = (yrot / 180 * 3.141592654f);
-        xrotrad = (xrot / 180 * 3.141592654f); 
-        xpos -= (float)sin(yrotrad);
-        zpos += (float)cos(yrotrad) ;
-        ypos += (float)sin(xrotrad);
-    }
-    
-    if (key=='d')
-    {
-        yrot += 1;
-        if (yrot >360) yrot -= 360;
-    }
-    
-    if (key=='a')
-    {
-        yrot -= 1;
-        if (yrot < -360)yrot += 360;
-    }
+	if (key=='q')
+	{
+		xrot += 1;
+		if (xrot >360) xrot -= 360;
+	}
 
-		if (key == 't')
-		{
-			ypos -= 1;
-		}
-		
-		if (key == 'g')
-		{
-			ypos += 1;
-		}
-		
-		if (key == 'f')
-		{
-			xpos += 1;
-		}
-		
-		if (key == 'h')
-		{
-			xpos -= 1;
-		}
+	if (key=='z')
+	{
+		xrot -= 1;
+		if (xrot < -360) xrot += 360;
+	}
+
+	if (key=='w')
+	{
+		float xrotrad, yrotrad;
+		yrotrad = (yrot / 180 * 3.141592654f);
+		xrotrad = (xrot / 180 * 3.141592654f);
+		xpos += (float)sin(yrotrad);
+		zpos -= (float)cos(yrotrad);
+		ypos -= (float)sin(xrotrad);
+	}
+
+	if (key=='s')
+	{
+	float xrotrad, yrotrad;
+	yrotrad = (yrot / 180 * 3.141592654f);
+	xrotrad = (xrot / 180 * 3.141592654f);
+	xpos -= (float)sin(yrotrad);
+	zpos += (float)cos(yrotrad);
+	ypos += (float)sin(xrotrad);
+	}
+
+	if (key=='d')
+	{
+	float yrotrad;
+	yrotrad = (yrot / 180 * 3.141592654f);
+	xpos += (float)cos(yrotrad) * 0.2;
+	zpos += (float)sin(yrotrad) * 0.2;
+	}
+
+	if (key=='a')
+	{
+	float yrotrad;
+	yrotrad = (yrot / 180 * 3.141592654f);
+	xpos -= (float)cos(yrotrad) * 0.2;
+	zpos -= (float)sin(yrotrad) * 0.2;
+	}
 
     if (key==27)
     {
-				printf("Cube Count was => %d\n", cube_count);
-        glutLeaveGameMode(); //set the resolution how it was
-        exit(0); //quit the program
+			printf("Cube Count was => %d\n", cube_count);
+      glutLeaveGameMode(); //set the resolution how it was
+      exit(0); //quit the program
     }
 }
 
@@ -305,7 +317,8 @@ int main (int argc, char **argv)
 	glutDisplayFunc (display); //use the display function to draw everything
 	glutIdleFunc (display); //update any variables in display,display can be changed to anyhing, as long as you move the variables to be updated, in this case, angle++;
 	glutReshapeFunc (reshape); //reshape the window accordingly
-	glutMouseFunc(mouse);
+	glutPassiveMotionFunc(mouseMovement); //check for mousemovement
+	glutSetCursor(GLUT_CURSOR_NONE);
 	glutKeyboardFunc (keyboard); //check the keyboard
 	glutMainLoop (); //call the main loop
 
