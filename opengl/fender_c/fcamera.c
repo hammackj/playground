@@ -31,5 +31,7 @@ void camera_move(camera_t *camera, vector3_t *direction, vector3_t *amount)
 
 void camera_update_view_matrix()
 {
+	int x;
 	
+	x = 1;
 }

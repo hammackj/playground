@@ -1,0 +1,2 @@
+[GENERAL] [*] Logger Initialized
+[GENERAL] [*] Engine Initialized

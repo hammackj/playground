@@ -18,13 +18,9 @@ typedef struct
 	vector3_t y_axis;
 	vector3_t z_axis;
 	vector3_t view_dir;
-	
-	
-	
-	
 } camera_t;
 
-
+/*
 float m_fovx;
 float m_znear;
 float m_zfar;
@@ -41,7 +37,7 @@ Vector3 m_velocity;
 Quaternion m_orientation;
 Matrix4 m_viewMatrix;
 Matrix4 m_projMatrix;
-
+*/
 //Initialize the camera
 camera_t camera_init(void);
 
