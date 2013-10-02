@@ -1,0 +1,20 @@
+[GENERAL] Log initialized.
+[GENERAL] Renderer initialized.
+[GENERAL] Fender shutting down.
+[GENERAL] Log shutdown.
+[GENERAL] Fender shutdown.
+[GENERAL] Log initialized.
+[GENERAL] Renderer initialized.
+[GENERAL] Fender shutting down.
+[GENERAL] Log shutdown.
+[GENERAL] Fender shutdown.
+[GENERAL] Log initialized.
+[GENERAL] Renderer initialized.
+[GENERAL] Fender shutting down.
+[GENERAL] Log shutdown.
+[GENERAL] Fender shutdown.
+[GENERAL] Log initialized.
+[GENERAL] Renderer initialized.
+[GENERAL] Fender shutting down.
+[GENERAL] Log shutdown.
+[GENERAL] Fender shutdown.
